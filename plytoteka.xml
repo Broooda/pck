@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="plyty.css"?>
+<!DOCTYPE płytoteka [
+<!ELEMENT płytoteka (dane_o_dokumencie, gatunki_muzyczne, albumy, wykonawcy)>
+<!ATTLIST płytoteka
+	xmlns:html CDATA #REQUIRED
+>
+<!ELEMENT dane_o_dokumencie (autorzy, opis)>
+<!ELEMENT autorzy (autor+)>
+<!ELEMENT autor (imię, nazwisko, numer_indeksu, ulubiony_gatunek+)>
+<!ELEMENT imię (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT numer_indeksu (#PCDATA)>
+<!ELEMENT ulubiony_gatunek (#PCDATA)>
+<!ELEMENT opis (tytuł_opisu, tekst_opisu, ostatnia_modyfikacja)>
+<!ELEMENT tytuł_opisu (#PCDATA)>
+<!ELEMENT tekst_opisu (#PCDATA)>
+<!ELEMENT ostatnia_modyfikacja (data, czas)>
+<!ELEMENT data (dzień, miesiąc, rok)>
+<!ELEMENT dzień (#PCDATA)>
+<!ELEMENT miesiąc (#PCDATA)>
+<!ELEMENT rok (#PCDATA)>
+<!ELEMENT czas (godzina, minuta, sekunda)>
+<!ELEMENT godzina (#PCDATA)>
+<!ELEMENT minuta (#PCDATA)>
+<!ELEMENT sekunda (#PCDATA)>
+<!ELEMENT gatunki_muzyczne (gatunek_muzyczny+)>
+<!ELEMENT gatunek_muzyczny (#PCDATA)>
+<!ATTLIST gatunek_muzyczny
+	gatunek_id ID #REQUIRED
+>
+<!ELEMENT albumy (płyta+)>
+<!ELEMENT płyta (id, tytuł, wykonawca, data_wydania, wytwórnia, okładka)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT tytuł (#PCDATA)>
+<!ELEMENT wykonawca (#PCDATA)>
+<!ELEMENT data_wydania (#PCDATA)>
+<!ATTLIST płyta
+	gatunek_muzyczny IDREFS #REQUIRED
+	artysta IDREF #REQUIRED
+>
+<!ELEMENT wytwórnia (#PCDATA)>
+<!ELEMENT okładka (html:img)>
+<!ELEMENT html:img EMPTY>
+<!ATTLIST html:img
+	src CDATA #REQUIRED
+>
+
+<!ELEMENT wykonawcy (artysta+)>
+<!ELEMENT artysta (nazwa, kraj_pochodzenia,zdjęcie)>
+<!ATTLIST artysta 
+	artysta_id ID #REQUIRED 
+	kontynet (europa|ameryka_północna|ameryka_południowa|afryka|azja|australia_i_oceania) #REQUIRED
+>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT kraj_pochodzenia (#PCDATA)>
+<!ELEMENT zdjęcie (html:img)>
+
+]>
+
+<płytoteka xmlns:html='http://www.w3.org/1999/xhtml' >
+
+	<dane_o_dokumencie>
+		<autorzy>
+			<autor>
+				<imię>Jakub</imię>
+				<nazwisko>Jatczak</nazwisko>
+				<numer_indeksu>157854</numer_indeksu>
+				<ulubiony_gatunek>Hard rock</ulubiony_gatunek>
+			</autor>
+			<autor>
+				<imię>Michał</imię>
+				<nazwisko>Siatkowski</nazwisko>
+				<numer_indeksu>157961</numer_indeksu>
+				<ulubiony_gatunek>Punk rock</ulubiony_gatunek>
+			</autor>
+		</autorzy>
+		<opis>
+			<tytuł_opisu>Płytoteka Kuby i Michała</tytuł_opisu>
+			<tekst_opisu>Aktualne zestawienie naszych top dwudziestu albumów wszechczasów</tekst_opisu>
+			<ostatnia_modyfikacja>
+				<data>
+					<dzień>18</dzień>
+					<miesiąc>10</miesiąc>
+					<rok>2011</rok>
+				</data>
+				<czas>
+					<godzina>01</godzina>
+					<minuta>06</minuta>
+					<sekunda>43</sekunda>
+				</czas>
+			</ostatnia_modyfikacja>
+		</opis>
+	</dane_o_dokumencie>
+	
+	<gatunki_muzyczne>
+		<gatunek_muzyczny gatunek_id="a1">rock</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a2">acid rock</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a3">blues</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a18">trash metal</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a4">heavy metal</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a5">pop</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a6">hip-hop</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a7">black metal</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a8">rock progresywny</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a9">blues rock</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a10">speed metal</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a11">hard rock</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a12">rock alternatywny</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a13">funk</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a14">drum and bass</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a15">rock and roll</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a16">grunge</gatunek_muzyczny>
+		<gatunek_muzyczny gatunek_id="a17">post punk</gatunek_muzyczny>
+	</gatunki_muzyczne>
+	
+	<albumy>
+		<płyta gatunek_muzyczny="a1 a2 a3" artysta="b1">
+			<id>1</id>
+			<tytuł>Are You Experienced</tytuł>
+			<wykonawca>The Jimi Hendrix Experience</wykonawca>
+			<data_wydania>12/05/1967</data_wydania>
+			<wytwórnia>Reprise</wytwórnia>
+			<okładka><html:img src="areyouexperienced.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a3 a4" artysta="b2">
+			<id>2</id>
+			<tytuł>Kill 'Em All</tytuł>
+			<wykonawca>Metallica</wykonawca>
+			<data_wydania>25/07/1983</data_wydania>
+			<wytwórnia>Megaforce Records</wytwórnia>
+			<okładka><html:img src="killemall.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a5" artysta="b3">
+			<id>3</id>
+			<tytuł>Backstreet Boys</tytuł>
+			<wykonawca>Backstreet Boys</wykonawca>
+			<data_wydania>06/05/1996</data_wydania>
+			<wytwórnia>Zomba Recording Corporation</wytwórnia>
+			<okładka><html:img src="backstreetboys.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a6" artysta="b4">
+			<id>4</id>
+			<tytuł>Infinite</tytuł>
+			<wykonawca>Eminem</wykonawca>
+			<data_wydania>12/06/1996</data_wydania>
+			<wytwórnia>Web Entertainment</wytwórnia>
+			<okładka><html:img src="infinite.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a7" artysta="b5">
+			<id>5</id>
+			<tytuł>Sventevith (Storming Near the Baltic)</tytuł>
+			<wykonawca>Behemoth</wykonawca>
+			<data_wydania>01/01/1995</data_wydania>
+			<wytwórnia>Pagan Records</wytwórnia>
+			<okładka><html:img src="sventevith.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a8" artysta="b6">
+			<id>6</id>
+			<tytuł>Cień wielkiej góry</tytuł>
+			<wykonawca>Budka Suflera</wykonawca>
+			<data_wydania>23/05/1975</data_wydania>
+			<wytwórnia>Polskie Nagrania Muza</wytwórnia>
+			<okładka><html:img src="cienwielkiejgory.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a1 a4" artysta="b7">
+			<id>7</id>
+			<tytuł>TSA</tytuł>
+			<wykonawca>TSA</wykonawca>
+			<data_wydania>9/03/1983</data_wydania>
+			<wytwórnia>Polton</wytwórnia>
+			<okładka><html:img src="tsa.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a1 a9" artysta="b8">
+			<id>8</id>
+			<tytuł>Fresh Cream</tytuł>
+			<wykonawca>Cream</wykonawca>
+			<data_wydania>9/12/1966</data_wydania>
+			<wytwórnia>Reaction Records</wytwórnia>
+			<okładka><html:img src="freshcream.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a4 a10 a11" artysta="b9">
+			<id>9</id>
+			<tytuł>Ace of Spades</tytuł>
+			<wykonawca>Motörhead</wykonawca>
+			<data_wydania>8/11/1980</data_wydania>
+			<wytwórnia>Bronze Records</wytwórnia>
+			<okładka><html:img src="aceofspades.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a12 a13" artysta="b10">
+			<id>10</id>
+			<tytuł>Blood Sugar Sex Magik</tytuł>
+			<wykonawca>Red Hot Chili Peppers</wykonawca>
+			<data_wydania>24/09/1991</data_wydania>
+			<wytwórnia>Warner Bros. Records</wytwórnia>
+			<okładka><html:img src="bloodsugarsexmagik.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a12" artysta="b11">
+			<id>11</id>
+			<tytuł>Only by the Night</tytuł>
+			<wykonawca>Kings of Leon</wykonawca>
+			<data_wydania>19/09/2008</data_wydania>
+			<wytwórnia>RCA Records</wytwórnia>
+			<okładka><html:img src="onlybythenight.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a14" artysta="b12">
+			<id>12</id>
+			<tytuł>Hold Your Colour</tytuł>
+			<wykonawca>Pendulum</wykonawca>
+			<data_wydania>23/05/2005</data_wydania>
+			<wytwórnia>	Breakbeat Kaos</wytwórnia>
+			<okładka><html:img src="holdyourcolor.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a1 a15" artysta="b13">
+			<id>13</id>
+			<tytuł>Please Please Me</tytuł>
+			<wykonawca>The Beatles</wykonawca>
+			<data_wydania>22/03/1963</data_wydania>
+			<wytwórnia>Parlophone</wytwórnia>
+			<okładka><html:img src="pleasepleaseme.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a6" artysta="b14">
+			<id>14</id>
+			<tytuł>2Pacalypse Now</tytuł>
+			<wykonawca>Tupac Shakur</wykonawca>
+			<data_wydania>12/11/1991</data_wydania>
+			<wytwórnia>Interscope Records</wytwórnia>
+			<okładka><html:img src="2pacalypsenow.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a12 a16" artysta="b15">
+			<id>15</id>
+			<tytuł>Vitalogy</tytuł>
+			<wykonawca>Pearl Jam</wykonawca>
+			<data_wydania>6/12/1994</data_wydania>
+			<wytwórnia>Epic Records</wytwórnia>
+			<okładka><html:img src="vitalogy.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a12 a16" artysta="b15">
+			<id>16</id>
+			<tytuł>Ten</tytuł>
+			<wykonawca>Pearl Jam</wykonawca>
+			<data_wydania>27/08/1991</data_wydania>
+			<wytwórnia>Epic Records</wytwórnia>
+			<okładka><html:img src="ten.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a16" artysta="b16">
+			<id>17</id>
+			<tytuł>Nevermind</tytuł>
+			<wykonawca>Nirvana</wykonawca>
+			<data_wydania>24/09/1991</data_wydania>
+			<wytwórnia>Geffen Records</wytwórnia>
+			<okładka><html:img src="nevermind.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a1 a17" artysta="b17">
+			<id>18</id>
+			<tytuł>Kult</tytuł>
+			<wykonawca>Kult</wykonawca>
+			<data_wydania>15/05/1987</data_wydania>
+			<wytwórnia>Polton</wytwórnia>
+			<okładka><html:img src="kult.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a11" artysta="b18">
+			<id>19</id>
+			<tytuł>Use Your Illusion I</tytuł>
+			<wykonawca>Guns N' Roses</wykonawca>
+			<data_wydania>17/09/1991</data_wydania>
+			<wytwórnia>	Geffen Records</wytwórnia>
+			<okładka><html:img src="useyourillusion.jpg"/></okładka>
+		</płyta>
+		<płyta gatunek_muzyczny="a4 a11" artysta="b19">
+			<id>20</id>
+			<tytuł>Highway to Hell</tytuł>
+			<wykonawca>AC/DC</wykonawca>
+			<data_wydania>27/07/1979</data_wydania>
+			<wytwórnia>Atlantic Records</wytwórnia>
+			<okładka><html:img src="highwaytohell.jpg"/></okładka>
+		</płyta>
+	</albumy>
+	
+	<wykonawcy>
+		<artysta artysta_id="b1" kontynet="ameryka_północna">
+			<nazwa>The Jimi Hendrix Experience</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist1.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b2" kontynet="ameryka_północna">
+			<nazwa>Metallica</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist2.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b3" kontynet="ameryka_północna">
+			<nazwa>Backstreet Boys</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist3.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b4" kontynet="ameryka_północna">
+			<nazwa>Eminem</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist4.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b5" kontynet="europa">
+			<nazwa>Behemot</nazwa>
+			<kraj_pochodzenia>Polska</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist5.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b6" kontynet="europa">
+			<nazwa>Budka Suflera</nazwa>
+			<kraj_pochodzenia>Polska</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist6.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b7" kontynet="europa">
+			<nazwa>TSA</nazwa>
+			<kraj_pochodzenia>Polska</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist7.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b8" kontynet="europa">
+			<nazwa>Cream</nazwa>
+			<kraj_pochodzenia>Wielka Brytania</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist8.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b9" kontynet="europa">
+			<nazwa>Motörhead</nazwa>
+			<kraj_pochodzenia>Wielka Brytania</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist9.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b10" kontynet="ameryka_północna">
+			<nazwa>Red Hot Chili Peppers</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist10.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b11" kontynet="ameryka_północna">
+			<nazwa>Kings of Leon</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist11.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b12" kontynet="australia_i_oceania">
+			<nazwa>Pendulum</nazwa>
+			<kraj_pochodzenia>Australia</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist12.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b13" kontynet="europa">
+			<nazwa>The Beatles</nazwa>
+			<kraj_pochodzenia>Wielka Brytania</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist13.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b14" kontynet="ameryka_północna">
+			<nazwa>Tupac Shakur</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist14.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b15" kontynet="ameryka_północna">
+			<nazwa>Pearl Jam</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist15.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b16" kontynet="ameryka_północna">
+			<nazwa>Nirvana</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist16.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b17" kontynet="europa">
+			<nazwa>Kult</nazwa>
+			<kraj_pochodzenia>Polska</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist17.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b18" kontynet="ameryka_północna">
+			<nazwa>Guns N' Roses</nazwa>
+			<kraj_pochodzenia>USA</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist18.jpg"/></zdjęcie>
+		</artysta>
+		<artysta artysta_id="b19" kontynet="australia_i_oceania">
+			<nazwa>AC/DC</nazwa>
+			<kraj_pochodzenia>Australia</kraj_pochodzenia>
+			<zdjęcie><html:img src="artist19.jpg"/></zdjęcie>
+		</artysta>
+	</wykonawcy>
+		
+</płytoteka>
