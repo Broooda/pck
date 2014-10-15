@@ -1,15 +1,3 @@
-dane_o_dokumencie{
-  display: block;
-  height: 150px;
-  background-color: #d2cac2;
-  position: fixed;
-  width: 1000px;
-  border: 10px solid #8b7b6a;
-  left: 50%;
-  margin-left: -510px;
-  z-index: 1;
-}
-
 shop {
   background-color: #FFC266;
   display: block;
@@ -23,6 +11,9 @@ shop:before {
   font-family: "Times New Roman", Georgia, Serif;
 }
 
+personal_data:before{ content: 'Dane osobowe';}
+
+products:before{content: 'Produkty';}
 
 order {  
   padding-top: 15px;
@@ -41,11 +32,11 @@ product{
   border-top: 1px solid black;
 }
 
-
 name surname {
  display: block;
 }
 name:before {content: "Imię nazwisko: "}
+
 address {
  display: block;
 }
@@ -57,6 +48,7 @@ city post_code{
 } 
 
 phone:before {contnet: "Numer telefonu";}
+
 phone{
   display: block;
 }
@@ -70,6 +62,10 @@ email{
 status{
   display: block;
 }
+
+total:before{content: "Suma: ";}
+
+total:after{content: attr(waluta);}
 
 total{
   display: block;
