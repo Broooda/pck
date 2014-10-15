@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href='shop.css' type='text/css'?>
+<!DOCTYPE shop [ 
+  <!ENTITY sukienka1 "<name> S001 </name>
+    <price> 20,50 </price>
+    <size> 42 </size>
+    <color> bialy </color>"> 
+  <!ENTITY sukienka2 "<product_name> S002 </product_name>
+    <price> 30,99 </price>
+    <size> 42 </size>
+    <color> czarny </color>"> 
+  <!ENTITY sukienka3 "<product_name> S003 </product_name>
+    <price> 45,50 </price>
+    <size> 42 </size>
+    <color> niebieski </color>"> 
+  <!ENTITY sukienka4 "<product_name> S004 </product_name>
+    <price> 74,89 </price>
+    <size> 40 </size>
+    <color> żółty </color>"> 
+  <!ENTITY buty1 "<product_name> B001 </product_name>
+    <price> 89,99 </price>
+    <size> 38 </size>
+    <color> czarny </color>">
+  <!ENTITY buty2 "<product_name> B002 </product_name>
+    <price> 79,99 </price>
+    <size> 37 </size>
+    <color> biały </color>"> 
+  <!ENTITY buty3 "<product_name> B003 </product_name>
+    <price> 119,89 </price>
+    <size> 37 </size>
+    <color> czarny </color>">   
+  <!ENTITY dodatki1 "<product_name> D001 </product_name>
+    <price> 20,99 </price>
+    <size> uniwersalny </size>
+    <color> czarny </color>">
+  <!ENTITY dodatki2 "<product_name> D002 </product_name>
+    <price> 18,99 </price>
+    <size> uniwersalny </size>
+    <color> czarny </color>"> 
+  <!ENTITY kapelusz1 "<product_name> K001 </product_name>
+    <price> 39,99 </price>
+    <size> uniwersalny </size>
+    <color> błętitny </color>">
+  <!ENTITY kapelusz2 "<product_name> K002 </product_name>
+    <price> 39,99 </price>
+    <size> uniwersalny </size>
+    <color> zielony </color>">
+  <!ENTITY kapelusz3 "<product_name> K003 </product_name>
+    <price> 39,99 </price>
+    <size> uniwersalny </size>
+    <color> różowy </color>">
+  <!ENTITY tshirt1 "<product_name> T001 </product_name>
+    <price> 29,99 </price>
+    <size> S </size>
+    <color> różowy </color>">
+  <!ENTITY tshirt2 "<product_name> T002 </product_name>
+    <price> 19,99 </price>
+    <size> S </size>
+    <color> żółty </color>">
+  <!ENTITY tshirt3 "<product_name> T003 </product_name>
+    <price> 9,99 </price>
+    <size> S </size>
+    <color> biały </color>">
+  <!ENTITY tshirt3 "<product_name> T003 </product_name>
+    <price> 9,99 </price>
+    <size> S </size>
+    <color> czarny </color>">
+] > 
+<shop name=' &quot; Najlepszy sklep &quot; '>
+  <order id='1'>
+    <personal_data>
+      <name>Maciej</name>
+      <surname>Brodecki</surname>
+      <address>
+        <street>Rydzowa 6</street>
+        <city>Łódź</city>
+        <post_code>91-211</post_code>
+      </address>
+      <contact>
+        <phone>787373238</phone>
+        <email>sda@wp.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-09-26 08:51:04</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'>72.48</total>
+    <products>
+      <!-- tutaj te idref'y -->
+    </products>
+  </order>
+  <!-- 
+  <order id='2'>
+    <name> Adam </name>
+    <surname> Wawrzyniak </surname>
+    <address> Lenowa 5 </address>
+    <city> Warszawa </city>
+    <post_code> 152-221 </post_code>
+    <phone> 652145874 </phone>
+    <created_at> 2014-10-06 10:42:05 </created_at>
+    <email> ratatata@wp.pl </email>
+    <status> unconfirmed </status>
+    <total> 89.99 </total>
+    <product category='buty' id='1'> 
+     &buty1;
+    </product>
+  </order>
+  <order id='3'>
+    <name> Anna </name>
+    <surname> Tomaszak </surname>
+    <address> Wici 5 </address>
+    <city> Łódź </city>
+    <post_code> 95-114 </post_code>
+    <phone> 485742154 </phone>
+    <created_at> 2014-10-05 12:52:55 </created_at>
+    <email> piec12@onet.pl </email>
+    <status> unconfirmed </status>
+    <total> 89.98 </total>
+    <product category='buty' id='2'> 
+     &buty1;
+    </product>
+    <product category='tshirt' id='3'> 
+     &tshirt3;
+    </product>
+  </order> -->
+</shop>
+
+
+
+

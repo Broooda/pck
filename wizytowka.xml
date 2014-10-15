@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href='shop.css' type='txt/css'?>
+<shop name=' &quot; Najlepszy sklep &quot; '>
+  <order id='1'>
+    <name> Maciej </name>
+    <surname> Brodecki </surname>
+    <address> Rydzowa 6 </address>
+    <city> Łódź </city>
+    <post_code> 91-211 </post_code>
+    <phone> 787373238 </phone>
+    <created_at> 2014-09-26 08:51:04 </created_at>
+    <email> sda@wp.pl </email>
+    <status> unconfirmed </status>
+    <total> 72,48 </total>
+    <product category='sukienka' id='1'> 
+      <name> S001 </name>
+      <price> 20,50 </price>
+      <size> 42 </size>
+      <color> bialy </color>
+    </product>
+    <product category='sukienka' id='2'> 
+      <name> S002 </name>
+      <price> 30,99 </price>
+      <size> 42 </size>
+      <color> czarny </color>
+    </product>
+    <product category='dodatki' id='1'> 
+      <name> D001 </name>
+      <price> 20,99 </price>
+      <size> uniwersalny </size>
+      <color> czarny </color>
+    </product>
+  </order>
+</shop>
+

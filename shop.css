@@ -1,0 +1,66 @@
+shop {
+  background-color: #FFC266;
+  display: block;
+  padding: 10px;
+  font-family: sans-serif;
+}
+shop:before {
+  content:  attr(name); 
+  font-size: 45px; 
+  text-align: center;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+
+order {  
+  padding-top: 15px;
+  background-color: #FFCE83;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+product{
+  padding-top: 10px;
+  background-color: #FF9900;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+
+name surname {
+ display: block;
+}
+name:before {content: "Imię nazwisko: "}
+address {
+ display: block;
+}
+
+address:before {content: "Adres: "; }
+
+city post_code{
+ display: block;
+} 
+phone{
+  display: block;
+}
+created_at{
+  display: block;
+  }
+email{
+  display: block;
+}
+
+status{
+  display: block;
+}
+
+total{
+  display: block;
+}
+
+product name{
+  color: red;
+}
