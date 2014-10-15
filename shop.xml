@@ -1,134 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
-<!-- enity raczej trwale inforamcje nazwa sklepu, cena atrybut watuta, wieksze zagniezdzenie, size M; 38,40,42; S,M,L, produkty refy, ceny z kropka, i serio 20-30 orderow, tota tez z waluta i narazie moze zostac pozniej sie usunie,  -->
-<shop name=' &quot; Najlepszy sklep &quot; '>
- <!--  <product_list>
-
-    <product>
-    <product_name product_id='s1'> S001 </product_name>
-    <product_category> sukienka </product_category>
-    <price> 20,50 </price>
-    <size> 40,42 </size>
-    <color> bialy </color>
+<!-- usunac spacje, enity raczej trwale inforamcje nazwa sklepu, cena atrybut watuta, wieksze zagniezdzenie, size M; 38,40,42; S,M,L, produkty refy, ceny z kropka, i serio 20-30 orderow, tota tez z waluta i narazie moze zostac pozniej sie usunie,  -->
+<shop name='&quot; Najlepszy sklep &quot;'>
+  <product_list>
+    <product product_id='s1'>
+      <product_name>S001</product_name>
+      <product_category>sukienka</product_category>
+      <price>20,50</price>
+      <size>38</size>
+      <color>biały</color>
     </product>
-    <product>
-    <product_name product_id=''> S002 </product_name>
-    roduct_category> sukienka2 </product_category>
-    <price> 30,99 </price>
-    <s</product>iz
-      e> 42 </size>
-      <c  <product>
-        or> czarny </color>"> 
-    <product_category> sukienka3 </product_category>
-    <product>
-    <product_name product_id=''> S003 </product_name>
-    <price> 45,50 </price>
-    <size> 42 </size>
-      <p</product>ro
-        duct><color> niebieski </color>
-
-    <product_category> sukienka4 </product_category>
-    <product>
-    <product_name product_id=''> S004 </product_name>
-    <price> 74,89 </price>
-    <size> 40 </size>
-    <color> żółty </color>
-  </product>
-  <product>
-  <product_category> buty1 </product_category>
-    <product>
-    <product_name product_id=''> B001 </product_name>
-    <price> 89,99 </price>
-    <size> 38 </size>
-    <color> czarny </color>">
-  </product>
-  <product>
-  <product_category> buty2 </product_category>
-    <product>
-    <product_name product_id=''> B002 </product_name>
-    <price> 79,99 </price>
-    <size> 37 </size>
-    <color> biały </color>"> 
-  </product>
-  <product>
-  <product_category> buty3 </product_category>
-    <product>
-    <product_name product_id=''> B003 </product_name>
-    <price> 119,89 </price>
-    <size> 37 </size>
-      <p</product>roduct><color> czarny </c
-        olor>"> 
-
-    <product_category> dodatki1 </product_category>
-    <product>
-    <product_name product_id=''> D001 </product_name>
-    <price> 20,99 </price>
-    <size> uniwersalny </size>
-    <c</product>
-      olor> czarny </color>">
-  <product>
-  <product_category> dodatki2 </product_category>
-    <product>
-    <product_name product_id=''> D002 </product_name>
-    <price> 18,99 </price>
-    <size> uniwersalny </size>
-      <product><color> czarny </color>"> 
-  </product>
-       <product_category> kapelusz1 </product_category>
-    <product>
-    <product_name product_id=''> K001 </product_name>
-    <price> 39,99 </price>
-    <size> uniwersalny </size>
-      <product><color> błętitny </color>"
-      </product>
-        <product_category> kapelusz2 </product_category>
-    <product>
-    <product_name product_id=''> K002 </product_name>
-    <price> 39,99 </price>
-    <size> uniwersalny </size>
-      <product><color> zielony </color>">
-      </product>
-       <product_category> kapelusz3 </product_category>
-    <product>
-    <product_name product_id=''> K003 </product_name>
-    <price> 39,99 </price>
-    <size> uniwersalny </size>
-    <color> różowy </color>">
-  </product>
-  <product>
-  <product_category> tshirt1 </product_category>
-    <product>
-    <product_name product_id=''> T001 </product_name>
-    <price> 29,99 </price>
-    <size> S </size>
-    <color> różowy </color>">
-  </product>
-  <product>
-  <product_category> tshirt2 </product_category>
-    <product>
-    <product_name product_id=''> T002 </product_name>
-    <price> 19,99 </price>
-    <size> S </size>
-    <color> żółty </color>">
-  </product>
-  <product>
-  <product_category> tshirt3 </product_category>
-    <product>
-    <product_name product_id=''> T003 </product_name>
-    <price> 9,99 </price>
-    <size> S </size>
-    <color> biały </color>">
-  </product>
-  <product>
-  <product_category> tshirt3 </product_category>
-    <product>
-    <product_name product_id=''> T003 </product_name>
-    <price> 9,99 </price>
-    <size> S </size>
-    <color> czarny </color>">
-  </product>
-  <product>
- </product_list> -->
+    <product product_id='s2'>
+      <product_name>S002</product_name>
+      <product_category>sukienka</product_category>
+      <price>30,99</price>
+      <size>36</size>
+      <color>czarny</color>
+    </product>
+    <product product_id='s3'>
+      <product_name>S003</product_name>
+      <product_category>sukienka</product_category>
+      <price>45,50</price>
+      <size>40</size>
+      <color>niebieski</color>
+    </product>
+    <product product_id='s4'>
+      <product_name>S004</product_name>
+      <product_category>sukienka</product_category>
+      <price>74,89</price>
+      <size>40</size>
+      <color>żółty</color>
+    </product>
+    <product product_id='b1'>
+      <product_name>B001</product_name>
+      <product_category>buty</product_category>
+      <price>89,99</price>
+      <size>38</size>
+      <color>czarny</color>">
+    </product>
+    <product product_id='b2'>
+      <product_name>B002</product_name>
+      <product_category>buty</product_category>
+      <price>79,99</price>
+      <size>37</size>
+      <color>biały</color> 
+    </product>
+    <product product_id='b3'>
+      <product_name>B003</product_name>
+      <product_category>buty</product_category>
+      <price>119,89</price>
+      <size>37</size>
+      <color>czarny</color>
+    </product>
+    <product product_id='d1'>
+      <product_name>D001</product_name>
+      <product_category>dodatki</product_category>
+      <price>20,99</price>
+      <size>uniwersalny</size>
+      <color>czarny</color>
+    </product>
+     <product product_id='d2'>
+      <product_name>D002</product_name>
+      <product_category>dodatki</product_category>
+      <price>18,99</price>
+      <size>uniwersalny</size>
+      <color>czarny</color>
+    </product> 
+    <product product_id='k1'>
+      <product_name>K001</product_name>
+      <product_category>kapelusz</product_category>
+      <price>39,99</price>
+      <size>uniwersalny</size>
+      <color>błętitny</color>
+   </product>   
+   <product product_id='k2'>
+      <product_name>K002</product_name>
+      <product_category>kapelusz</product_category>
+      <price>39,99</price>
+      <size>uniwersalny</size>
+      <color>zielony</color>
+    </product>    
+    <product product_id='k3'>
+      <product_name>K003</product_name>
+      <product_category>kapelusz</product_category>
+      <price>39,99</price>
+      <size>uniwersalny</size>
+      <color>różowy</color>
+    </product>
+    <product product_id='t1'>
+      <product_name>T001</product_name>
+      <product_category>tshirt</product_category>
+      <price>19,99</price>
+      <size>S</size>
+      <color>różowy</color>
+    </product>
+    <product product_id='t2'>
+      <product_name>T001</product_name>
+      <product_category>tshirt</product_category>
+      <price>19,99</price>
+      <size>S</size>
+      <color>żółty</color>
+    </product>
+    <product product_id='t3'>
+      <product_name>T002</product_name>
+      <product_category>tshirt</product_category>
+      <price>9,99</price>
+      <size>S</size>
+      <color>biały</color>
+    </product>
+    <product product_id='t4'>
+      <product_name>T002</product_name>
+      <product_category>tshirt</product_category>
+      <price>9,99</price>
+      <size>S</size>
+      <color>czarny</color>
+    </product>
+  </product_list>
   <order id='1'>
     <personal_data>
       <name>Maciej</name>
@@ -592,5 +579,3 @@
     </products>
   </order>  
 </shop>
-
-
