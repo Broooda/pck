@@ -2,6 +2,133 @@
 <?xml-stylesheet href='shop.css' type='text/css'?>
 <!-- usunac spacje, enity raczej trwale inforamcje nazwa sklepu, cena atrybut watuta, wieksze zagniezdzenie, size M; 38,40,42; S,M,L, produkty refy, ceny z kropka, i serio 20-30 orderow, tota tez z waluta i narazie moze zostac pozniej sie usunie,  -->
 <shop name=' &quot; Najlepszy sklep &quot; '>
+ <!--  <product_list>
+
+    <product>
+    <product_name product_id='s1'> S001 </product_name>
+    <product_category> sukienka </product_category>
+    <price> 20,50 </price>
+    <size> 40,42 </size>
+    <color> bialy </color>
+    </product>
+    <product>
+    <product_name product_id=''> S002 </product_name>
+    roduct_category> sukienka2 </product_category>
+    <price> 30,99 </price>
+    <s</product>iz
+      e> 42 </size>
+      <c  <product>
+        or> czarny </color>"> 
+    <product_category> sukienka3 </product_category>
+    <product>
+    <product_name product_id=''> S003 </product_name>
+    <price> 45,50 </price>
+    <size> 42 </size>
+      <p</product>ro
+        duct><color> niebieski </color>
+
+    <product_category> sukienka4 </product_category>
+    <product>
+    <product_name product_id=''> S004 </product_name>
+    <price> 74,89 </price>
+    <size> 40 </size>
+    <color> żółty </color>
+  </product>
+  <product>
+  <product_category> buty1 </product_category>
+    <product>
+    <product_name product_id=''> B001 </product_name>
+    <price> 89,99 </price>
+    <size> 38 </size>
+    <color> czarny </color>">
+  </product>
+  <product>
+  <product_category> buty2 </product_category>
+    <product>
+    <product_name product_id=''> B002 </product_name>
+    <price> 79,99 </price>
+    <size> 37 </size>
+    <color> biały </color>"> 
+  </product>
+  <product>
+  <product_category> buty3 </product_category>
+    <product>
+    <product_name product_id=''> B003 </product_name>
+    <price> 119,89 </price>
+    <size> 37 </size>
+      <p</product>roduct><color> czarny </c
+        olor>"> 
+
+    <product_category> dodatki1 </product_category>
+    <product>
+    <product_name product_id=''> D001 </product_name>
+    <price> 20,99 </price>
+    <size> uniwersalny </size>
+    <c</product>
+      olor> czarny </color>">
+  <product>
+  <product_category> dodatki2 </product_category>
+    <product>
+    <product_name product_id=''> D002 </product_name>
+    <price> 18,99 </price>
+    <size> uniwersalny </size>
+      <product><color> czarny </color>"> 
+  </product>
+       <product_category> kapelusz1 </product_category>
+    <product>
+    <product_name product_id=''> K001 </product_name>
+    <price> 39,99 </price>
+    <size> uniwersalny </size>
+      <product><color> błętitny </color>"
+      </product>
+        <product_category> kapelusz2 </product_category>
+    <product>
+    <product_name product_id=''> K002 </product_name>
+    <price> 39,99 </price>
+    <size> uniwersalny </size>
+      <product><color> zielony </color>">
+      </product>
+       <product_category> kapelusz3 </product_category>
+    <product>
+    <product_name product_id=''> K003 </product_name>
+    <price> 39,99 </price>
+    <size> uniwersalny </size>
+    <color> różowy </color>">
+  </product>
+  <product>
+  <product_category> tshirt1 </product_category>
+    <product>
+    <product_name product_id=''> T001 </product_name>
+    <price> 29,99 </price>
+    <size> S </size>
+    <color> różowy </color>">
+  </product>
+  <product>
+  <product_category> tshirt2 </product_category>
+    <product>
+    <product_name product_id=''> T002 </product_name>
+    <price> 19,99 </price>
+    <size> S </size>
+    <color> żółty </color>">
+  </product>
+  <product>
+  <product_category> tshirt3 </product_category>
+    <product>
+    <product_name product_id=''> T003 </product_name>
+    <price> 9,99 </price>
+    <size> S </size>
+    <color> biały </color>">
+  </product>
+  <product>
+  <product_category> tshirt3 </product_category>
+    <product>
+    <product_name product_id=''> T003 </product_name>
+    <price> 9,99 </price>
+    <size> S </size>
+    <color> czarny </color>">
+  </product>
+  <product>
+ </product_list> -->
   <order id='1'>
     <personal_data>
       <name>Maciej</name>
@@ -432,7 +559,7 @@
         <post_code>92-604</post_code>
       </address>
       <contact>
-        <phone>743432849</phone>
+        <phone>43432849</phone>
         <email>t.szulczewska@gmail.com</email>
       </contact>
     </personal_data>
@@ -463,8 +590,7 @@
     <products>
       
     </products>
-  </order> 
-  
+  </order>  
 </shop>
 
 
