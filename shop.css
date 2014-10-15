@@ -1,15 +1,3 @@
-dane_o_dokumencie{
-  display: block;
-  height: 150px;
-  background-color: #d2cac2;
-  position: fixed;
-  width: 1000px;
-  border: 10px solid #8b7b6a;
-  left: 50%;
-  margin-left: -510px;
-  z-index: 1;
-}
-
 shop {
   background-color: #FFC266;
   display: block;
@@ -23,13 +11,30 @@ shop:before {
   font-family: "Times New Roman", Georgia, Serif;
 }
 
+personal_data:before{ 
+  content: 'Dane osobowe';
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+}
+
+products:before{
+  content: 'Produkty';
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+}
+
+order:before{
+  content: attr(id);
+}
 
 order {  
   padding-top: 15px;
   background-color: #FFCE83;
   display: block;
   margin-bottom: 10px;
-  text-align: center;
+  padding-left: 150px;
 }
 
 product{
@@ -41,38 +46,94 @@ product{
   border-top: 1px solid black;
 }
 
-
 name surname {
  display: block;
-}
-name:before {content: "Imię nazwisko: "}
-address {
- display: block;
+ position: fixed;
 }
 
-address:before {content: "Adres: "; }
+name {
+  font-size: 20px;
+}
+
+surname {
+  font-size: 20px;
+}
+name:before {
+  content: "Imię nazwisko: "; 
+  font-style: italic;
+  font-size: 18px;
+}
+
+address {
+ display: block;
+ font-size: 20px;
+}
+
+address:before {
+  content: "Adres: ";
+  font-style: italic;
+  font-size: 18px;
+}
 
 city post_code{
  display: block;
 } 
 
-phone:before {contnet: "Numer telefonu";}
+phone:before {
+  content: "Numer telefonu: "; 
+  font-style: italic; 
+  font-size: 18px;
+}
+
 phone{
   display: block;
+  font-size: 20px;
 }
+
+created_at:before {
+  content: "Data: ";
+  font-style: italic;
+  font-size: 18px;
+}
+
 created_at{
   display: block;
+  font-size: 20px;
   }
+
+email:before{
+  content: "E-mail: ";
+  font-style: italic;
+  font-size: 18px;
+}
+
 email{
   display: block;
+  font-size: 20px;
+}
+
+status:before{
+  content: "Status: ";
+  font-style: italic;
+  font-size: 18px;
 }
 
 status{
   display: block;
+  font-size: 20px;
 }
+
+total:before{
+  content: "Suma: ";
+  font-style: italic;
+  font-size: 18px;
+}
+
+total:after{content: attr(currenct);}
 
 total{
   display: block;
+  font-size: 20px;
 }
 
 product name{
