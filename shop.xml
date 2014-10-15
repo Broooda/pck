@@ -1,71 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
-<!DOCTYPE shop [ 
-  <!ENTITY sukienka1 "<name> S001 </name>
-    <price> 20,50 </price>
-    <size> 42 </size>
-    <color> bialy </color>"> 
-  <!ENTITY sukienka2 "<product_name> S002 </product_name>
-    <price> 30,99 </price>
-    <size> 42 </size>
-    <color> czarny </color>"> 
-  <!ENTITY sukienka3 "<product_name> S003 </product_name>
-    <price> 45,50 </price>
-    <size> 42 </size>
-    <color> niebieski </color>"> 
-  <!ENTITY sukienka4 "<product_name> S004 </product_name>
-    <price> 74,89 </price>
-    <size> 40 </size>
-    <color> żółty </color>"> 
-  <!ENTITY buty1 "<product_name> B001 </product_name>
-    <price> 89,99 </price>
-    <size> 38 </size>
-    <color> czarny </color>">
-  <!ENTITY buty2 "<product_name> B002 </product_name>
-    <price> 79,99 </price>
-    <size> 37 </size>
-    <color> biały </color>"> 
-  <!ENTITY buty3 "<product_name> B003 </product_name>
-    <price> 119,89 </price>
-    <size> 37 </size>
-    <color> czarny </color>">   
-  <!ENTITY dodatki1 "<product_name> D001 </product_name>
-    <price> 20,99 </price>
-    <size> uniwersalny </size>
-    <color> czarny </color>">
-  <!ENTITY dodatki2 "<product_name> D002 </product_name>
-    <price> 18,99 </price>
-    <size> uniwersalny </size>
-    <color> czarny </color>"> 
-  <!ENTITY kapelusz1 "<product_name> K001 </product_name>
-    <price> 39,99 </price>
-    <size> uniwersalny </size>
-    <color> błętitny </color>">
-  <!ENTITY kapelusz2 "<product_name> K002 </product_name>
-    <price> 39,99 </price>
-    <size> uniwersalny </size>
-    <color> zielony </color>">
-  <!ENTITY kapelusz3 "<product_name> K003 </product_name>
-    <price> 39,99 </price>
-    <size> uniwersalny </size>
-    <color> różowy </color>">
-  <!ENTITY tshirt1 "<product_name> T001 </product_name>
-    <price> 29,99 </price>
-    <size> S </size>
-    <color> różowy </color>">
-  <!ENTITY tshirt2 "<product_name> T002 </product_name>
-    <price> 19,99 </price>
-    <size> S </size>
-    <color> żółty </color>">
-  <!ENTITY tshirt3 "<product_name> T003 </product_name>
-    <price> 9,99 </price>
-    <size> S </size>
-    <color> biały </color>">
-  <!ENTITY tshirt3 "<product_name> T003 </product_name>
-    <price> 9,99 </price>
-    <size> S </size>
-    <color> czarny </color>">
-] > 
+<!-- usunac spacje, enity raczej trwale inforamcje nazwa sklepu, cena atrybut watuta, wieksze zagniezdzenie, size M; 38,40,42; S,M,L, produkty refy, ceny z kropka, i serio 20-30 orderow, tota tez z waluta i narazie moze zostac pozniej sie usunie,  -->
 <shop name=' &quot; Najlepszy sklep &quot; '>
   <order id='1'>
     <personal_data>
@@ -85,45 +20,444 @@
     <status>unconfirmed</status>
     <total currenct='zł'>72.48</total>
     <products>
-      <!-- tutaj te idref'y -->
+      s1, s2, d1
     </products>
   </order>
-  <!-- 
   <order id='2'>
-    <name> Adam </name>
-    <surname> Wawrzyniak </surname>
-    <address> Lenowa 5 </address>
-    <city> Warszawa </city>
-    <post_code> 152-221 </post_code>
-    <phone> 652145874 </phone>
-    <created_at> 2014-10-06 10:42:05 </created_at>
-    <email> ratatata@wp.pl </email>
-    <status> unconfirmed </status>
-    <total> 89.99 </total>
-    <product category='buty' id='1'> 
-     &buty1;
-    </product>
+    <personal_data>
+      <name>Adam</name>
+      <surname>Świątek</surname>
+      <address>
+        <street>Radna 6</street>
+        <city>Warszawa</city>
+        <post_code>54-121</post_code>
+      </address>
+      <contact>
+        <phone>541236985</phone>
+        <email>adamiaczek11@interia.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-09-28 14:25:14</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
   </order>
   <order id='3'>
-    <name> Anna </name>
-    <surname> Tomaszak </surname>
-    <address> Wici 5 </address>
-    <city> Łódź </city>
-    <post_code> 95-114 </post_code>
-    <phone> 485742154 </phone>
-    <created_at> 2014-10-05 12:52:55 </created_at>
-    <email> piec12@onet.pl </email>
-    <status> unconfirmed </status>
-    <total> 89.98 </total>
-    <product category='buty' id='2'> 
-     &buty1;
-    </product>
-    <product category='tshirt' id='3'> 
-     &tshirt3;
-    </product>
-  </order> -->
+    <personal_data>
+      <name>Magda</name>
+      <surname>Datek</surname>
+      <address>
+        <street>Fiorna 32</street>
+        <city>Radom</city>
+        <post_code>54-852</post_code>
+      </address>
+      <contact>
+        <phone>542415785</phone>
+        <email>amadfra@gmail.com</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-09-30 16:45:22</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='4'>
+    <personal_data>
+      <name>Elżbieta</name>
+      <surname>Toporek</surname>
+      <address>
+        <street>Strażacka 18</street>
+        <city>Warszawa</city>
+        <post_code>84-154</post_code>
+      </address>
+      <contact>
+        <phone>874521958</phone>
+        <email>koziaserekinteria.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-01 09:11:44</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='5'>
+    <personal_data>
+      <name>Marcin</name>
+      <surname>Majdan</surname>
+      <address>
+        <street>Elektryczna 41</street>
+        <city>Gdańsk</city>
+        <post_code>65-147</post_code>
+      </address>
+      <contact>
+        <phone>985147852</phone>
+        <email>tiruriru@o2.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-01 14:27:54</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='6'>
+    <personal_data>
+      <name>Beata</name>
+      <surname>Tyczka</surname>
+      <address>
+        <street>Piwna 5</street>
+        <city>Poznań</city>
+        <post_code>41-574</post_code>
+      </address>
+      <contact>
+        <phone>915963258</phone>
+        <email>gutekpszczolka@gmail.com</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-01 14:44:51</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='7'>
+    <personal_data>
+      <name>Mateusz</name>
+      <surname>Spokojny</surname>
+      <address>
+        <street>Nerwowa 13</street>
+        <city>Szczecin</city>
+        <post_code>74-521</post_code>
+      </address>
+      <contact>
+        <phone>874523658</phone>
+        <email>prosiaczek1223@wp.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-25 10:51:54</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='8'>
+    <personal_data>
+      <name>Alan</name>
+      <surname>Płatek</surname>
+      <address>
+        <street>Rotundy 16</street>
+        <city>Szczebrzeszyn</city>
+        <post_code>55-415</post_code>
+      </address>
+      <contact>
+        <phone>841259875</phone>
+        <email>chrzaszczyrzewoszyce@wp.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-04 07:12:19</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='9'>
+    <personal_data>
+      <name>Bożydar</name>
+      <surname>Aleksis</surname>
+      <address>
+        <street>Techniczna 66</street>
+        <city>Konin</city>
+        <post_code>541-748</post_code>
+      </address>
+      <contact>
+        <phone>654852951</phone>
+        <email>wpoldobulki@o2.eu</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-04 08:24:41</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='10'>
+    <personal_data>
+      <name>Agata</name>
+      <surname>Bidon</surname>
+      <address>
+        <street>Bandera 92</street>
+        <city>Turek</city>
+        <post_code>32-154</post_code>
+      </address>
+      <contact>
+        <phone>951357852</phone>
+        <email>jalowaziemia@wp.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-04 14:27:40</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='11'>
+    <personal_data>
+      <name>Edyta</name>
+      <surname>Górska</surname>
+      <address>
+        <street>Wredna 13a</street>
+        <city>Poznań</city>
+        <post_code>84-158</post_code>
+      </address>
+      <contact>
+        <phone>985236987</phone>
+        <email>toja111222@interia.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-04 14:38:54</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='12'>
+    <personal_data>
+      <name>Amelia</name>
+      <surname>Wieloryb</surname>
+      <address>
+        <street>Potoków 42</street>
+        <city>Kraków</city>
+        <post_code>84-587</post_code>
+      </address>
+      <contact>
+        <phone>658741259</phone>
+        <email>totendziadija@wp.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-05 07:42:11</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='13'>
+    <personal_data>
+      <name>Marcin</name>
+      <surname>Pokuta</surname>
+      <address>
+        <street>Elen 5</street>
+        <city>Warszawa</city>
+        <post_code>65-452</post_code>
+      </address>
+      <contact>
+        <phone>753159852</phone>
+        <email>atararata@onet.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-10-05 10:10:11</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='14'>
+    <personal_data>
+      <name>Gustaw</name>
+      <surname>Konrad</surname>
+      <address>
+        <street>Dziadowa 44</street>
+        <city>Wilno</city>
+        <post_code>00-746</post_code>
+      </address>
+      <contact>
+        <phone>473946294</phone>
+        <email>gustaw.konrad@wp.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2013-12-23 14:07:14</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='15'>
+    <personal_data>
+      <name>Adam</name>
+      <surname>Mickiewicz</surname>
+      <address>
+        <street>Pana Tadeusza 17</street>
+        <city>Wilno</city>
+        <post_code>00-734</post_code>
+      </address>
+      <contact>
+        <phone>829573202</phone>
+        <email>a.mickiewicz@gmail.com</email>
+      </contact>
+    </personal_data>
+    <created_at>2013-11-16 16:57:14</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='16'>
+    <personal_data>
+      <name>Wisława</name>
+      <surname>Szymborska</surname>
+      <address>
+        <street>Stare Miasto 5</street>
+        <city>Kraków</city>
+        <post_code>92-612</post_code>
+      </address>
+      <contact>888213453</phone>
+        <email>wisia@onet.eu</email>
+      </contact>
+    </personal_data>
+    <created_at>2013-09-01 23:59:59</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='17'>
+    <personal_data>
+      <name>Jakub</name>
+      <surname>Rząd</surname>
+      <address>
+        <street>Polesie 3</street>
+        <city>Kraków</city>
+        <post_code>93-252</post_code>
+      </address>
+      <contact>666587412</phone>
+        <email>parafianieznami@onet.eu</email>
+      </contact>
+    </personal_data>
+    <created_at>2013-04-21 15:29:49</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='18'>
+    <personal_data>
+      <name>Artur</name>
+      <surname>Więc</surname>
+      <address>
+        <street>Boruty 42</street>
+        <city>Bydgoszcz</city>
+        <post_code>65-123</post_code>
+      </address>
+      <contact>888777444</phone>
+        <email>elemeledudki@o2.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2013-10-12 04:42:23</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='19'>
+    <personal_data>
+      <name>Marta</name>
+      <surname>Manta</surname>
+      <address>
+        <street>Baranów Białych 4</street>
+        <city>Bytom</city>
+        <post_code>92-612</post_code>
+      </address>
+      <contact>521478523</phone>
+        <email>badatrw@renka.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2013-12-12 21:55:12</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='20'>
+    <personal_data>
+      <name>Anna</name>
+      <surname>Wiadro</surname>
+      <address>
+        <street>Wesoła 8</street>
+        <city>Warszawa</city>
+        <post_code>91-532</post_code>
+      </address>
+      <contact>743431049</phone>
+        <email>anna.wiadro@wp.pl</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-02-15 11:20:11</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='21'>
+    <personal_data>
+      <name>Terencja</name>
+      <surname>Szulczewska</surname>
+      <address>
+        <street>Zgierska 14</street>
+        <city>Żyrarów</city>
+        <post_code>92-604</post_code>
+      </address>
+      <contact>743432849</phone>
+        <email>t.szulczewska@gmail.com</email>
+      </contact>
+    </personal_data>
+    <created_at>2014-02-13 14:44:44</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order>
+  <order id='22'>
+    <personal_data>
+      <name>Shrek</name>
+      <surname>Osioł</surname>
+      <address>
+        <street>Bagienna Chatka 1</street>
+        <city>Bajka</city>
+        <post_code>11-111</post_code>
+      </address>
+      <contact>587456369</phone>
+        <email>zielonomi@shrek.com</email>
+      </contact>
+    </personal_data>
+    <created_at>2013-04-12 08:14:28</created_at>
+    <status>unconfirmed</status>
+    <total currenct='zł'></total>
+    <products>
+      
+    </products>
+  </order> 
+  
 </shop>
-
-
 
 
