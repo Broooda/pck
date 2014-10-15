@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
 <!-- usunac spacje, enity raczej trwale inforamcje nazwa sklepu, cena atrybut watuta, wieksze zagniezdzenie, size M; 38,40,42; S,M,L, produkty refy, ceny z kropka, i serio 20-30 orderow, tota tez z waluta i narazie moze zostac pozniej sie usunie,  -->
 <shop name=' &quot; Najlepszy sklep &quot; '>
@@ -326,7 +326,8 @@
         <city>Kraków</city>
         <post_code>92-612</post_code>
       </address>
-      <contact>888213453</phone>
+      <contact>
+        <phone>888213453</phone>
         <email>wisia@onet.eu</email>
       </contact>
     </personal_data>
@@ -346,7 +347,8 @@
         <city>Kraków</city>
         <post_code>93-252</post_code>
       </address>
-      <contact>666587412</phone>
+      <contact>
+        <phone>666587412</phone>
         <email>parafianieznami@onet.eu</email>
       </contact>
     </personal_data>
@@ -366,7 +368,8 @@
         <city>Bydgoszcz</city>
         <post_code>65-123</post_code>
       </address>
-      <contact>888777444</phone>
+      <contact>
+        <phone>888777444</phone>
         <email>elemeledudki@o2.pl</email>
       </contact>
     </personal_data>
@@ -386,7 +389,8 @@
         <city>Bytom</city>
         <post_code>92-612</post_code>
       </address>
-      <contact>521478523</phone>
+      <contact>
+        <phone>521478523</phone>
         <email>badatrw@renka.pl</email>
       </contact>
     </personal_data>
@@ -406,7 +410,8 @@
         <city>Warszawa</city>
         <post_code>91-532</post_code>
       </address>
-      <contact>743431049</phone>
+      <contact>
+        <phone>743431049</phone>
         <email>anna.wiadro@wp.pl</email>
       </contact>
     </personal_data>
@@ -426,7 +431,8 @@
         <city>Żyrarów</city>
         <post_code>92-604</post_code>
       </address>
-      <contact>743432849</phone>
+      <contact>
+        <phone>743432849</phone>
         <email>t.szulczewska@gmail.com</email>
       </contact>
     </personal_data>
@@ -446,7 +452,8 @@
         <city>Bajka</city>
         <post_code>11-111</post_code>
       </address>
-      <contact>587456369</phone>
+      <contact>
+        <phone>587456369</phone>
         <email>zielonomi@shrek.com</email>
       </contact>
     </personal_data>
