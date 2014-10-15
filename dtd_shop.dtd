@@ -5,7 +5,7 @@
 >
 <!ELEMENT order (personal_data,created,status,total,products)>
 <!ATTLIST order id ID #REQUIRED>
-<!ATTLIST order status (confirmed|unconfirmed)"unfonfirmed">
+<!ATTLIST order status (confirmed|unconfirmed) "unfonfirmed">
 <!ELEMENT personal_data (name,surname,address,contact)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
@@ -18,7 +18,7 @@
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT created (#PCDATA)>
 <!ELEMENT total (#PCDATA)>
-<!ELEMENT products IDREFS>
+<!ATTLIST products  product_id IDREFS #REQUIRED>
 
 <!ELEMENT product_list (product+)>
 <!ATTLIST product_list product_id ID #REQUIRED>
