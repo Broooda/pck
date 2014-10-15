@@ -32,7 +32,7 @@
 <!ELEMENT size (#PCDATA)>
 <!ELEMENT color (#PCDATA)>
 ]>
-<shop name='df'>
+<shop name='&nazwa;'>
   <product_list>
     <product product_id='s1'>
       <product_name>S001</product_name>

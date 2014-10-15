@@ -9,7 +9,7 @@ shop:before {
   font-size: 45px; 
   text-align: center;
   font-family: "Times New Roman", Georgia, Serif;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 2px 1px #000;
 }
 
 personal_data:before{ 
@@ -27,9 +27,16 @@ products:before{
 }
 
 order:before{
-  content: "Zamówienie numer" attr(id) attr(status);
+  content: "Zamówienie numer " attr(id) " ; " attr(status);
 }
 
+order[status='confirmed']{
+  color: green;
+}
+
+order[status='unconfirmed']{
+  color: red;
+}
 
 order { 
   margin: 15px 0px;
