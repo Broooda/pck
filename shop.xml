@@ -1,117 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
-<!-- usunac spacje, enity raczej trwale inforamcje nazwa sklepu, cena atrybut watuta, wieksze zagniezdzenie, size M; 38,40,42; S,M,L, produkty refy, ceny z kropka, i serio 20-30 orderow, tota tez z waluta i narazie moze zostac pozniej sie usunie,  -->
-<shop name='&quot; Najlepszy sklep &quot;'>
+<shop name='&nazwa;'>
   <product_list>
     <product product_id='s1'>
       <product_name>S001</product_name>
       <product_category>sukienka</product_category>
-      <price>20,50</price>
+      <price>20.50</price>
       <size>38</size>
       <color>biały</color>
     </product>
     <product product_id='s2'>
       <product_name>S002</product_name>
       <product_category>sukienka</product_category>
-      <price>30,99</price>
+      <price>30.99</price>
       <size>36</size>
       <color>czarny</color>
     </product>
     <product product_id='s3'>
       <product_name>S003</product_name>
       <product_category>sukienka</product_category>
-      <price>45,50</price>
+      <price>45.50</price>
       <size>40</size>
       <color>niebieski</color>
     </product>
     <product product_id='s4'>
       <product_name>S004</product_name>
       <product_category>sukienka</product_category>
-      <price>74,89</price>
+      <price>74.89</price>
       <size>40</size>
       <color>żółty</color>
     </product>
     <product product_id='b1'>
       <product_name>B001</product_name>
       <product_category>buty</product_category>
-      <price>89,99</price>
+      <price>89.99</price>
       <size>38</size>
       <color>czarny</color>
     </product>
     <product product_id='b2'>
       <product_name>B002</product_name>
       <product_category>buty</product_category>
-      <price>79,99</price>
+      <price>79.99</price>
       <size>37</size>
       <color>biały</color> 
     </product>
     <product product_id='b3'>
       <product_name>B003</product_name>
       <product_category>buty</product_category>
-      <price>119,89</price>
+      <price>119.89</price>
       <size>37</size>
       <color>czarny</color>
     </product>
     <product product_id='d1'>
       <product_name>D001</product_name>
       <product_category>dodatki</product_category>
-      <price>20,99</price>
+      <price>20.99</price>
       <size>uniwersalny</size>
       <color>czarny</color>
     </product>
      <product product_id='d2'>
       <product_name>D002</product_name>
       <product_category>dodatki</product_category>
-      <price>18,99</price>
+      <price>18.99</price>
       <size>uniwersalny</size>
       <color>czarny</color>
     </product> 
     <product product_id='k1'>
       <product_name>K001</product_name>
       <product_category>kapelusz</product_category>
-      <price>39,99</price>
+      <price>39.99</price>
       <size>uniwersalny</size>
       <color>błętitny</color>
    </product>   
    <product product_id='k2'>
       <product_name>K002</product_name>
       <product_category>kapelusz</product_category>
-      <price>39,99</price>
+      <price>39.99</price>
       <size>uniwersalny</size>
       <color>zielony</color>
     </product>    
     <product product_id='k3'>
       <product_name>K003</product_name>
       <product_category>kapelusz</product_category>
-      <price>39,99</price>
+      <price>39.99</price>
       <size>uniwersalny</size>
       <color>różowy</color>
     </product>
     <product product_id='t1'>
       <product_name>T001</product_name>
       <product_category>tshirt</product_category>
-      <price>19,99</price>
+      <price>19.99</price>
       <size>S</size>
       <color>różowy</color>
     </product>
     <product product_id='t2'>
       <product_name>T001</product_name>
       <product_category>tshirt</product_category>
-      <price>19,99</price>
+      <price>19.99</price>
       <size>S</size>
       <color>żółty</color>
     </product>
     <product product_id='t3'>
       <product_name>T002</product_name>
       <product_category>tshirt</product_category>
-      <price>9,99</price>
+      <price>9.99</price>
       <size>S</size>
       <color>biały</color>
     </product>
     <product product_id='t4'>
       <product_name>T002</product_name>
       <product_category>tshirt</product_category>
-      <price>9,99</price>
+      <price>9.99</price>
       <size>S</size>
       <color>czarny</color>
     </product>

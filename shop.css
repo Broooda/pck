@@ -25,19 +25,25 @@ products:before{
   font-weight: bold;
 }
 
-order:before{
+/*order:before{
   content: attr(id);
 }
+*/
 
-order {  
+order { 
+  margin: 15px 0px;
   padding-top: 15px;
   background-color: #FFCE83;
   display: block;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
   padding-left: 150px;
 }
 
 product{
+  display: none;
+}
+
+order products product{
   padding-top: 10px;
   background-color: #FF9900;
   display: block;
