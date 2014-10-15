@@ -1,0 +1,30 @@
+<!ENTITY nazwa "Najlepszy sklep">
+<!ELEMENT shop (order*,product_list)>
+<!ATTLIST shop
+	name CDATA #REQUIRED
+>
+<!ELEMENT order (personal_data,created,status,total,products)>
+<!ATTLIST order id ID #REQUIRED>
+<!ATTLIST order status (confirmed|unconfirmed)"unfonfirmed">
+<!ELEMENT personal_data (name,surname,address,contact)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT address (street,city,post_code)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT post_code (#PCDATA)>
+<!ELEMENT contact (phone | email)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT created (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+<!ELEMENT products IDREFS>
+
+<!ELEMENT product_list (product+)>
+<!ATTLIST product_list product_id ID #REQUIRED>
+<!ELEMENT product (product_name,product_category,price,size,color)>
+<!ELEMENT product_name (#PCDATA)>
+<!ELEMENT product_category (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
