@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-stylesheet href='shop.css' type='text/css'?> -->
+<?xml-stylesheet href='shop.css' type='text/css'?>
 <!DOCTYPE shop [
 <!ENTITY nazwa "Najlepszy sklep">
 <!ELEMENT shop (order*,product_list)>
