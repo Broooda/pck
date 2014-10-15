@@ -5,7 +5,7 @@
 >
 <!ELEMENT order (personal_data,created,status,total,products)>
 <!ATTLIST order id ID #REQUIRED>
-<!ATTLIST order status (confirmed|unconfirmed) "unfonfirmed">
+<!ATTLIST order status (confirmed|unconfirmed) "unconfirmed">
 <!ELEMENT personal_data (name,surname,address,contact)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
