@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href='shop.css' type='text/css'?>
+<!-- <?xml-stylesheet href='shop.css' type='text/css'?> -->
 <!DOCTYPE shop [
 <!ENTITY nazwa "Najlepszy sklep">
 <!ELEMENT shop (order*,product_list)>
@@ -8,7 +8,7 @@
 >
 <!ELEMENT order (personal_data,created,status,total,products)>
 <!ATTLIST order id ID #REQUIRED>
-<!ATTLIST order status (confirmed|unconfirmed) "unfonfirmed">
+<!ATTLIST order status (confirmed|unconfirmed) "unconfirmed">
 <!ELEMENT personal_data (name,surname,address,contact)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
