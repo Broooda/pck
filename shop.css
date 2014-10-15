@@ -1,3 +1,15 @@
+dane_o_dokumencie{
+  display: block;
+  height: 150px;
+  background-color: #d2cac2;
+  position: fixed;
+  width: 1000px;
+  border: 10px solid #8b7b6a;
+  left: 50%;
+  margin-left: -510px;
+  z-index: 1;
+}
+
 shop {
   background-color: #FFC266;
   display: block;
@@ -43,6 +55,8 @@ address:before {content: "Adres: "; }
 city post_code{
  display: block;
 } 
+
+phone:before {contnet: "Numer telefonu";}
 phone{
   display: block;
 }
