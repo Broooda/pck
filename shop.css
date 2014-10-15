@@ -9,6 +9,7 @@ shop:before {
   font-size: 45px; 
   text-align: center;
   font-family: "Times New Roman", Georgia, Serif;
+  text-shadow: 1px 1px 1px #000;
 }
 
 personal_data:before{ 
@@ -25,10 +26,10 @@ products:before{
   font-weight: bold;
 }
 
-/*order:before{
-  content: attr(id);
+order:before{
+  content: "Zamówienie numer" attr(id) attr(status);
 }
-*/
+
 
 order { 
   margin: 15px 0px;
@@ -114,17 +115,6 @@ email:before{
 }
 
 email{
-  display: block;
-  font-size: 20px;
-}
-
-status:before{
-  content: "Status: ";
-  font-style: italic;
-  font-size: 18px;
-}
-
-status{
   display: block;
   font-size: 20px;
 }
