@@ -21,6 +21,8 @@
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT created (#PCDATA)>
 <!ELEMENT total (#PCDATA)>
+
+<!ELEMENT products EMPTY>
 <!ATTLIST products  product_id IDREFS #REQUIRED>
 
 <!ELEMENT product_list (product+)>
