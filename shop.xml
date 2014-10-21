@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
-<!DOCTYPE shop [
-<!ENTITY nazwa "Najlepszy sklep">
-<!ELEMENT shop (order*,product_list)>
+<!DOCTYPE shop SYSTEM "dtd_shop.dtd">
+<!-- <!ENTITY nazwa "Najlepszy sklep">
+]> -->
+<!--<!ELEMENT shop (product_list, order*)>
 <!ATTLIST shop
   name CDATA #REQUIRED
 >
-<!ELEMENT order (personal_data,created,status,total,products)>
+<!ELEMENT order (personal_data,created_at,total,products)>
 <!ATTLIST order id ID #REQUIRED>
-<!ATTLIST order status (confirmed|unconfirmed) "unconfirmed">
+<!ATTLIST order status (confirmed | unconfirmed) "unconfirmed">
 <!ELEMENT personal_data (name,surname,address,contact)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
@@ -16,132 +17,157 @@
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT city (#PCDATA)>
 <!ELEMENT post_code (#PCDATA)>
-<!ELEMENT contact (phone | email)>
+<!ELEMENT contact (phone, email)>
 <!ELEMENT phone (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
-<!ELEMENT created (#PCDATA)>
+<!ELEMENT created_at (#PCDATA)>
 <!ELEMENT total (#PCDATA)>
-
+<!ATTLIST total currency CDATA #REQUIRED>
 <!ELEMENT products EMPTY>
-<!ATTLIST products  product_id IDREFS #REQUIRED>
-
+<!ATTLIST products  product_id IDREF #REQUIRED>
 <!ELEMENT product_list (product+)>
-<!ATTLIST product_list product_id ID #REQUIRED>
+<!ATTLIST product id ID #REQUIRED>
 <!ELEMENT product (product_name,product_category,price,size,color)>
 <!ELEMENT product_name (#PCDATA)>
 <!ELEMENT product_category (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 <!ELEMENT size (#PCDATA)>
 <!ELEMENT color (#PCDATA)>
-]>
-<shop name='&nazwa;'>
+]> -->
+<shop name='Najlepszy sklep'>
+  <o_autorach>
+    <student id='stud1' indeks='180508' plec="M">
+      <name>Maciej</name>
+      <surname>Brodecki</surname>
+      <address>
+        <street>Wymyslona 1</street>
+        <city>Poziomki</city>
+        <post_code>12-111</post_code>
+      </address>
+      <contact>
+        <phone>666666666</phone>  
+      </contact>
+    </student>
+    <student id='stud2' indeks='180748' plec="M">
+      <name>Artur</name>
+      <surname>Wróblewski</surname>
+      <address>
+        <street>Bardzo zmyślona 3</street>
+        <city>Krówki</city>
+        <post_code>99-999</post_code>
+      </address>
+      <contact>
+        <email>180748@edu.p.lodz.pl</email>    
+      </contact>
+    </student>
+  </o_autorach>
   <product_list>
-    <product product_id='s1'>
+    <product id='s1'>
       <product_name>S001</product_name>
       <product_category>sukienka</product_category>
       <price>20.50</price>
       <size>38</size>
       <color>biały</color>
     </product>
-    <product product_id='s2'>
+    <product id='s2'>
       <product_name>S002</product_name>
       <product_category>sukienka</product_category>
       <price>30.99</price>
       <size>36</size>
       <color>czarny</color>
     </product>
-    <product product_id='s3'>
+    <product id='s3'>
       <product_name>S003</product_name>
       <product_category>sukienka</product_category>
       <price>45.50</price>
       <size>40</size>
       <color>niebieski</color>
     </product>
-    <product product_id='s4'>
+    <product id='s4'>
       <product_name>S004</product_name>
       <product_category>sukienka</product_category>
       <price>74.89</price>
       <size>40</size>
       <color>żółty</color>
     </product>
-    <product product_id='b1'>
+    <product id='b1'>
       <product_name>B001</product_name>
       <product_category>buty</product_category>
       <price>89.99</price>
       <size>38</size>
       <color>czarny</color>
     </product>
-    <product product_id='b2'>
+    <product id='b2'>
       <product_name>B002</product_name>
       <product_category>buty</product_category>
       <price>79.99</price>
       <size>37</size>
       <color>biały</color> 
     </product>
-    <product product_id='b3'>
+    <product id='b3'>
       <product_name>B003</product_name>
       <product_category>buty</product_category>
       <price>119.89</price>
       <size>37</size>
       <color>czarny</color>
     </product>
-    <product product_id='d1'>
+    <product id='d1'>
       <product_name>D001</product_name>
       <product_category>dodatki</product_category>
       <price>20.99</price>
       <size>uniwersalny</size>
       <color>czarny</color>
     </product>
-     <product product_id='d2'>
+     <product id='d2'>
       <product_name>D002</product_name>
       <product_category>dodatki</product_category>
       <price>18.99</price>
       <size>uniwersalny</size>
       <color>czarny</color>
     </product> 
-    <product product_id='k1'>
+    <product id='k1'>
       <product_name>K001</product_name>
       <product_category>kapelusz</product_category>
       <price>39.99</price>
       <size>uniwersalny</size>
       <color>błętitny</color>
    </product>   
-   <product product_id='k2'>
+   <product id='k2'>
       <product_name>K002</product_name>
       <product_category>kapelusz</product_category>
       <price>39.99</price>
       <size>uniwersalny</size>
       <color>zielony</color>
     </product>    
-    <product product_id='k3'>
+    <product id='k3'>
       <product_name>K003</product_name>
       <product_category>kapelusz</product_category>
       <price>39.99</price>
       <size>uniwersalny</size>
       <color>różowy</color>
     </product>
-    <product product_id='t1'>
+    <product id='t1'>
       <product_name>T001</product_name>
       <product_category>tshirt</product_category>
       <price>19.99</price>
       <size>S</size>
       <color>różowy</color>
     </product>
-    <product product_id='t2'>
+    <product id='t2'>
       <product_name>T001</product_name>
       <product_category>tshirt</product_category>
       <price>19.99</price>
       <size>S</size>
       <color>żółty</color>
     </product>
-    <product product_id='t3'>
+    <product id='t3'>
       <product_name>T002</product_name>
       <product_category>tshirt</product_category>
       <price>9.99</price>
       <size>S</size>
       <color>biały</color>
     </product>
-    <product product_id='t4'>
+    <product id='t4'>
       <product_name>T002</product_name>
       <product_category>tshirt</product_category>
       <price>9.99</price>
@@ -149,7 +175,10 @@
       <color>czarny</color>
     </product>
   </product_list>
-  <order id='1'>
+
+  <!-- Orders -->
+
+  <order id='o1'>
     <personal_data>
       <name>Maciej</name>
       <surname>Brodecki</surname>
@@ -164,11 +193,12 @@
       </contact>
     </personal_data>
     <created_at>2014-09-26 08:51:04</created_at>
-    <total currenct='zł'>72.48</total>
-    <products product_id='s1 s2 s3'>
-    </products>
+    <total currency='zł'>72.48</total>
+    <products product_id='s1'/>
+    <products product_id='s2'/>
+    <products product_id='s2'/>
   </order>
-  <order id='2'>
+  <order id='o2'>
     <personal_data>
       <name>Adam</name>
       <surname>Świątek</surname>
@@ -183,12 +213,11 @@
       </contact>
     </personal_data>
     <created_at>2014-09-28 14:25:14</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='t1'/>
+    <products product_id='t2'/>
   </order>
-  <order id='3' status='confirmed'>
+  <order id='o3' status='confirmed'>
     <personal_data>
       <name>Magda</name>
       <surname>Datek</surname>
@@ -203,12 +232,11 @@
       </contact>
     </personal_data>
     <created_at>2014-09-30 16:45:22</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s1'/>
+    <products product_id='b1'/>
   </order>
-  <order id='4' status='confirmed'>
+  <order id='o4' status='confirmed'>
     <personal_data>
       <name>Elżbieta</name>
       <surname>Toporek</surname>
@@ -223,12 +251,11 @@
       </contact>
     </personal_data>
     <created_at>2014-10-01 09:11:44</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s2'/>
+    <products product_id='t2'/>
   </order>
-  <order id='5' status='confirmed'>
+  <order id='o5' status='confirmed'>
     <personal_data>
       <name>Marcin</name>
       <surname>Majdan</surname>
@@ -243,12 +270,10 @@
       </contact>
     </personal_data>
     <created_at>2014-10-01 14:27:54</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s1'/>
   </order>
-  <order id='6' status='confirmed'>
+  <order id='o6' status='confirmed'>
     <personal_data>
       <name>Beata</name>
       <surname>Tyczka</surname>
@@ -263,12 +288,12 @@
       </contact>
     </personal_data>
     <created_at>2014-10-01 14:44:51</created_at>
-    <total currenct='zł'></total>
-    <products popo=''>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s1'/>
+    <products product_id='t1'/>
+    <products product_id='b1'/>
   </order>
-  <order id='7'>
+  <order id='o7'>
     <personal_data>
       <name>Mateusz</name>
       <surname>Spokojny</surname>
@@ -283,12 +308,13 @@
       </contact>
     </personal_data>
     <created_at>2014-10-25 10:51:54</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='b1'/>
+    <products product_id='d1'/>
+    <products product_id='s1'/>
+    <products product_id='k1'/>
   </order>
-  <order id='8'>
+  <order id='o8'>
     <personal_data>
       <name>Alan</name>
       <surname>Płatek</surname>
@@ -303,12 +329,10 @@
       </contact>
     </personal_data>
     <created_at>2014-10-04 07:12:19</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='b2'/>
   </order>
-  <order id='9'>
+  <order id='o9'>
     <personal_data>
       <name>Bożydar</name>
       <surname>Aleksis</surname>
@@ -323,12 +347,10 @@
       </contact>
     </personal_data>
     <created_at>2014-10-04 08:24:41</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='k1'/>
   </order>
-  <order id='10' status='confirmed'>
+  <order id='o10' status='confirmed'>
     <personal_data>
       <name>Agata</name>
       <surname>Bidon</surname>
@@ -343,12 +365,10 @@
       </contact>
     </personal_data>
     <created_at>2014-10-04 14:27:40</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='k2'/>
   </order>
-  <order id='11' status='confirmed'>
+  <order id='o11' status='confirmed'>
     <personal_data>
       <name>Edyta</name>
       <surname>Górska</surname>
@@ -363,12 +383,12 @@
       </contact>
     </personal_data>
     <created_at>2014-10-04 14:38:54</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='b1'/>
+    <products product_id='d2'/>
+    <products product_id='d1'/>
   </order>
-  <order id='12'>
+  <order id='o12'>
     <personal_data>
       <name>Amelia</name>
       <surname>Wieloryb</surname>
@@ -383,12 +403,11 @@
       </contact>
     </personal_data>
     <created_at>2014-10-05 07:42:11</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s1'/>
+    <products product_id='s2'/>
   </order>
-  <order id='13' status='confirmed'>
+  <order id='o13' status='confirmed'>
     <personal_data>
       <name>Marcin</name>
       <surname>Pokuta</surname>
@@ -403,12 +422,11 @@
       </contact>
     </personal_data>
     <created_at>2014-10-05 10:10:11</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='k1'/>
+    <products product_id='t1'/>
   </order>
-  <order id='14'>
+  <order id='o14'>
     <personal_data>
       <name>Gustaw</name>
       <surname>Konrad</surname>
@@ -423,12 +441,10 @@
       </contact>
     </personal_data>
     <created_at>2013-12-23 14:07:14</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s3'/>
   </order>
-  <order id='15' status='confirmed'>
+  <order id='o15' status='confirmed'>
     <personal_data>
       <name>Adam</name>
       <surname>Mickiewicz</surname>
@@ -443,12 +459,10 @@
       </contact>
     </personal_data>
     <created_at>2013-11-16 16:57:14</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s1'/>
   </order>
-  <order id='16' status='confirmed'>
+  <order id='o16' status='confirmed'>
     <personal_data>
       <name>Wisława</name>
       <surname>Szymborska</surname>
@@ -463,12 +477,11 @@
       </contact>
     </personal_data>
     <created_at>2013-09-01 23:59:59</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='s4'/>
+    <products product_id='t3'/>
   </order>
-  <order id='17'>
+  <order id='o17'>
     <personal_data>
       <name>Jakub</name>
       <surname>Rząd</surname>
@@ -483,12 +496,10 @@
       </contact>
     </personal_data>
     <created_at>2013-04-21 15:29:49</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='t3'/>
   </order>
-  <order id='18' status='confirmed'>
+  <order id='o18' status='confirmed'>
     <personal_data>
       <name>Artur</name>
       <surname>Więc</surname>
@@ -503,12 +514,11 @@
       </contact>
     </personal_data>
     <created_at>2013-10-12 04:42:23</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='k1'/>
+    <products product_id='k2'/>
   </order>
-  <order id='19' status='confirmed'>
+  <order id='o19' status='confirmed'>
     <personal_data>
       <name>Marta</name>
       <surname>Manta</surname>
@@ -523,12 +533,10 @@
       </contact>
     </personal_data>
     <created_at>2013-12-12 21:55:12</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='k1'/>
   </order>
-  <order id='20'>
+  <order id='o20'>
     <personal_data>
       <name>Anna</name>
       <surname>Wiadro</surname>
@@ -543,12 +551,10 @@
       </contact>
     </personal_data>
     <created_at>2014-02-15 11:20:11</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='t2'/>
   </order>
-  <order id='21'>
+  <order id='o21'>
     <personal_data>
       <name>Terencja</name>
       <surname>Szulczewska</surname>
@@ -563,12 +569,10 @@
       </contact>
     </personal_data>
     <created_at>2014-02-13 14:44:44</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='t3'/>
   </order>
-  <order id='22' status='confirmed'>
+  <order id='o22' status='confirmed'>
     <personal_data>
       <name>Shrek</name>
       <surname>Osioł</surname>
@@ -583,9 +587,9 @@
       </contact>
     </personal_data>
     <created_at>2013-04-12 08:14:28</created_at>
-    <total currenct='zł'></total>
-    <products>
-      
-    </products>
+    <total currency='zł'>1</total>
+    <products product_id='k1'/>
+    <products product_id='k2'/>
+    <products product_id='k3'/>
   </order>  
 </shop>

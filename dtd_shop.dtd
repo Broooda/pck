@@ -1,11 +1,15 @@
-<!ENTITY nazwa "Najlepszy sklep">
-<!ELEMENT shop (order*,product_list)>
-<!ATTLIST shop
-	name CDATA #REQUIRED
->
-<!ELEMENT order (personal_data,created,status,total,products)>
+<!ELEMENT shop (o_autorach?,product_list, order*)>
+<!ATTLIST shop name CDATA #REQUIRED>
+
+<!ELEMENT o_autorach (student+)>
+<!ELEMENT student (name,surname,address,contact)>
+<!ATTLIST student id ID #REQUIRED> 
+<!ATTLIST student indeks CDATA #REQUIRED>
+<!ATTLIST student plec CDATA #REQUIRED>
+
+<!ELEMENT order (personal_data,created_at,total,products+)>
 <!ATTLIST order id ID #REQUIRED>
-<!ATTLIST order status (confirmed|unconfirmed) "unconfirmed">
+<!ATTLIST order status (confirmed | unconfirmed) "unconfirmed">
 <!ELEMENT personal_data (name,surname,address,contact)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
@@ -13,15 +17,16 @@
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT city (#PCDATA)>
 <!ELEMENT post_code (#PCDATA)>
-<!ELEMENT contact (phone | email)>
+<!ELEMENT contact ((phone,email?)|(phone?,email))>
 <!ELEMENT phone (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
-<!ELEMENT created (#PCDATA)>
+<!ELEMENT created_at (#PCDATA)>
 <!ELEMENT total (#PCDATA)>
-<!ATTLIST products  product_id IDREFS #REQUIRED>
-
+<!ATTLIST total currency CDATA #REQUIRED>
+<!ELEMENT products EMPTY>
+<!ATTLIST products  product_id IDREF #REQUIRED>
 <!ELEMENT product_list (product+)>
-<!ATTLIST product_list product_id ID #REQUIRED>
+<!ATTLIST product id ID #REQUIRED>
 <!ELEMENT product (product_name,product_category,price,size,color)>
 <!ELEMENT product_name (#PCDATA)>
 <!ELEMENT product_category (#PCDATA)>

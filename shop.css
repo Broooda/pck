@@ -132,7 +132,7 @@ total:before{
   font-size: 18px;
 }
 
-total:after{content: attr(currenct);}
+total:after{content: attr(currency);}
 
 total{
   display: block;
