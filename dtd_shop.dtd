@@ -7,7 +7,7 @@
 <!ATTLIST student indeks CDATA #REQUIRED>
 <!ATTLIST student plec CDATA #REQUIRED>
 
-<!ELEMENT order (personal_data,created_at,total,products+)>
+<!ELEMENT order (personal_data,created_at,total,products)>
 <!ATTLIST order id ID #REQUIRED>
 <!ATTLIST order status (confirmed | unconfirmed) "unconfirmed">
 <!ELEMENT personal_data (name,surname,address,contact)>
@@ -23,9 +23,9 @@
 <!ELEMENT created_at (#PCDATA)>
 <!ELEMENT total (#PCDATA)>
 <!ATTLIST total currency CDATA #REQUIRED>
-<!ELEMENT products (product+)>
-<!ELEMENT product EMPTY>
-<!ATTLIST product  product_id IDREF #REQUIRED>
+<!ELEMENT products (bought_product+)>
+<!ELEMENT bought_product EMPTY>
+<!ATTLIST bought_product  product_id IDREF #REQUIRED>
 <!ELEMENT product_list (product+)>
 <!ATTLIST product id ID #REQUIRED>
 <!ELEMENT product (product_name,product_category,price,size,color)>

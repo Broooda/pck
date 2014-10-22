@@ -166,10 +166,12 @@
       </contact>
     </personal_data>
     <created_at>2014-09-26 08:51:04</created_at>
-    <total currency='zł'>72.48</total>
-    <products product_id='s1'/>
-    <products product_id='s2'/>
-    <products product_id='s2'/>
+    <total currency='zł'>72.46</total>
+    <products>
+      <bought_product product_id='s1'/>
+      <bought_product product_id='s2'/>
+      <bought_product product_id='s2'/>
+    </products>
   </order>
   <order id='o2'>
     <personal_data>
@@ -188,8 +190,8 @@
     <created_at>2014-09-28 14:25:14</created_at>
     <total currency='zł'>1</total>
     <products>
-      <product product_id='t1'/>
-      <product product_id='t2'/>
+      <bought_product product_id='t1'/>
+      <bought_product product_id='t2'/>
     </products>
   </order>
   <order id='o3' status='confirmed'>
@@ -208,8 +210,10 @@
     </personal_data>
     <created_at>2014-09-30 16:45:22</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s1'/>
-    <products product_id='b1'/>
+    <products>
+      <bought_product product_id='s1'/>
+      <bought_product product_id='b1'/>
+    </products>
   </order>
   <order id='o4' status='confirmed'>
     <personal_data>
@@ -227,8 +231,10 @@
     </personal_data>
     <created_at>2014-10-01 09:11:44</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s2'/>
-    <products product_id='t2'/>
+    <products>
+      <bought_product product_id='s2'/>
+      <bought_product product_id='t2'/>
+    </products>
   </order>
   <order id='o5' status='confirmed'>
     <personal_data>
@@ -246,7 +252,9 @@
     </personal_data>
     <created_at>2014-10-01 14:27:54</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s1'/>
+    <products>
+      <bought_product product_id='s1'/>
+    </products>
   </order>
   <order id='o6' status='confirmed'>
     <personal_data>
@@ -264,9 +272,11 @@
     </personal_data>
     <created_at>2014-10-01 14:44:51</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s1'/>
-    <products product_id='t1'/>
-    <products product_id='b1'/>
+    <products>
+      <bought_product product_id='s1'/>
+      <bought_product product_id='t1'/>
+      <bought_product product_id='b1'/>
+    </products>
   </order>
   <order id='o7'>
     <personal_data>
@@ -284,10 +294,12 @@
     </personal_data>
     <created_at>2014-10-25 10:51:54</created_at>
     <total currency='zł'>1</total>
-    <products product_id='b1'/>
-    <products product_id='d1'/>
-    <products product_id='s1'/>
-    <products product_id='k1'/>
+    <products>
+      <bought_product product_id='b1'/>
+      <bought_product product_id='d1'/>
+      <bought_product product_id='s1'/>
+      <bought_product product_id='k1'/>
+    </products>
   </order>
   <order id='o8'>
     <personal_data>
@@ -305,7 +317,9 @@
     </personal_data>
     <created_at>2014-10-04 07:12:19</created_at>
     <total currency='zł'>1</total>
-    <products product_id='b2'/>
+    <products>
+      <bought_product product_id='b2'/>
+    </products>
   </order>
   <order id='o9'>
     <personal_data>
@@ -323,7 +337,9 @@
     </personal_data>
     <created_at>2014-10-04 08:24:41</created_at>
     <total currency='zł'>1</total>
-    <products product_id='k1'/>
+    <products>
+      <bought_product product_id='k1'/>
+    </products>
   </order>
   <order id='o10' status='confirmed'>
     <personal_data>
@@ -341,7 +357,9 @@
     </personal_data>
     <created_at>2014-10-04 14:27:40</created_at>
     <total currency='zł'>1</total>
-    <products product_id='k2'/>
+    <products>
+      <bought_product product_id='k2'/>
+    </products>
   </order>
   <order id='o11' status='confirmed'>
     <personal_data>
@@ -359,9 +377,11 @@
     </personal_data>
     <created_at>2014-10-04 14:38:54</created_at>
     <total currency='zł'>1</total>
-    <products product_id='b1'/>
-    <products product_id='d2'/>
-    <products product_id='d1'/>
+    <products>
+      <bought_product product_id='b1'/>
+      <bought_product product_id='d2'/>
+      <bought_product product_id='d1'/>
+    </products>
   </order>
   <order id='o12'>
     <personal_data>
@@ -379,8 +399,10 @@
     </personal_data>
     <created_at>2014-10-05 07:42:11</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s1'/>
-    <products product_id='s2'/>
+    <products>
+      <bought_product product_id='s1'/>
+      <bought_product product_id='s2'/>
+    </products>
   </order>
   <order id='o13' status='confirmed'>
     <personal_data>
@@ -398,8 +420,10 @@
     </personal_data>
     <created_at>2014-10-05 10:10:11</created_at>
     <total currency='zł'>1</total>
-    <products product_id='k1'/>
-    <products product_id='t1'/>
+    <products>
+      <bought_product product_id='k1'/>
+      <bought_product product_id='t1'/>
+    </products>
   </order>
   <order id='o14'>
     <personal_data>
@@ -417,7 +441,9 @@
     </personal_data>
     <created_at>2013-12-23 14:07:14</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s3'/>
+    <products>
+      <bought_product product_id='s3'/>
+    </products>
   </order>
   <order id='o15' status='confirmed'>
     <personal_data>
@@ -435,7 +461,9 @@
     </personal_data>
     <created_at>2013-11-16 16:57:14</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s1'/>
+    <products>
+      <bought_product product_id='s1'/>
+    </products>
   </order>
   <order id='o16' status='confirmed'>
     <personal_data>
@@ -453,8 +481,10 @@
     </personal_data>
     <created_at>2013-09-01 23:59:59</created_at>
     <total currency='zł'>1</total>
-    <products product_id='s4'/>
-    <products product_id='t3'/>
+    <products>
+      <bought_product product_id='s4'/>
+      <bought_product product_id='t3'/>
+    </products>
   </order>
   <order id='o17'>
     <personal_data>
@@ -472,7 +502,9 @@
     </personal_data>
     <created_at>2013-04-21 15:29:49</created_at>
     <total currency='zł'>1</total>
-    <products product_id='t3'/>
+    <products>
+      <bought_product product_id='t3'/>
+    </products>
   </order>
   <order id='o18' status='confirmed'>
     <personal_data>
@@ -490,8 +522,10 @@
     </personal_data>
     <created_at>2013-10-12 04:42:23</created_at>
     <total currency='zł'>1</total>
-    <products product_id='k1'/>
-    <products product_id='k2'/>
+    <products>
+      <bought_product product_id='k1'/>
+      <bought_product product_id='k2'/>
+    </products>
   </order>
   <order id='o19' status='confirmed'>
     <personal_data>
@@ -509,7 +543,9 @@
     </personal_data>
     <created_at>2013-12-12 21:55:12</created_at>
     <total currency='zł'>1</total>
-    <products product_id='k1'/>
+    <products>
+      <bought_product product_id='k1'/>
+    </products>
   </order>
   <order id='o20'>
     <personal_data>
@@ -527,7 +563,9 @@
     </personal_data>
     <created_at>2014-02-15 11:20:11</created_at>
     <total currency='zł'>1</total>
-    <products product_id='t2'/>
+    <products>
+      <bought_product product_id='t2'/>
+    </products>
   </order>
   <order id='o21'>
     <personal_data>
@@ -545,7 +583,9 @@
     </personal_data>
     <created_at>2014-02-13 14:44:44</created_at>
     <total currency='zł'>1</total>
-    <products product_id='t3'/>
+    <products>
+      <bought_product product_id='t3'/>
+    </products>
   </order>
   <order id='o22' status='confirmed'>
     <personal_data>
@@ -563,8 +603,10 @@
     </personal_data>
     <created_at>2013-04-12 08:14:28</created_at>
     <total currency='zł'>1</total>
-    <products product_id='k1'/>
-    <products product_id='k2'/>
-    <products product_id='k3'/>
+    <products>
+      <bought_product product_id='k1'/>
+      <bought_product product_id='k2'/>
+      <bought_product product_id='k3'/>
+    </products>
   </order>  
 </shop>
