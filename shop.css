@@ -64,11 +64,11 @@ order products product{
   border-top: 1px solid black;
 }
 
-order name {
+order * name {
   font-size: 20px;
 }
 
-order surname {
+order * surname {
   font-size: 20px;
 }
 order name:before {
@@ -124,10 +124,6 @@ total{
   font-size: 20px;
 }
 
-product name{
-  color: red;
-}
-
 student[indeks="180508"] {
   color: #B00;
   display: block;
@@ -150,7 +146,7 @@ student[indeks="180748"] {
   opacity: 0.5;
 }
 
-about_authors surname {
+student > surname {
   text-decoration: underline; 
 }
 
