@@ -72,7 +72,7 @@ name {
 surname {
   font-size: 20px;
 }
-name:before {
+order name:before {
   content: "Imię nazwisko: "; 
   font-style: italic;
   font-size: 18px;
@@ -141,4 +141,39 @@ total{
 
 product name{
   color: red;
+}
+
+student[indeks="180508"] {
+  display: block;
+  position: fixed;
+    top: 10px;
+    left: 20px;
+  margin-left: 600px;
+  font-size: 17pt;
+  text-align: center;
+  opacity: 0.5;
+}
+
+student[indeks="180748"] {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  margin-left: 900px;
+  font-size: 17pt;
+  text-align: center;
+  opacity: 0.5;
+}
+
+about_authors surname {
+  text-decoration: underline; 
+}
+
+about_authors student:before{
+  content: attr(indeks);
+
+}
+
+about_authors address,contact{
+  display: none;
 }

@@ -4,7 +4,7 @@
 <!ENTITY nazwa "Najlepszy sklep">
 ]>
 <shop name='&nazwa;'>
-  <o_autorach>
+  <about_authors>
     <student id='stud1' indeks='180508' plec="M">
       <name>Maciej</name>
       <surname>Brodecki</surname>
@@ -33,7 +33,7 @@
         <email>amozetaki@niepodam.pl</email>    
       </contact>
     </student>
-  </o_autorach>
+  </about_authors>
   <product_list>
     <product id='s1'>
       <product_name>S001</product_name>
