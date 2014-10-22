@@ -144,24 +144,24 @@ product name{
 }
 
 student[indeks="180508"] {
+  color: #B00;
   display: block;
   position: fixed;
     top: 10px;
     left: 20px;
-  margin-left: 600px;
+  margin-left: 670px;
   font-size: 17pt;
-  text-align: center;
   opacity: 0.5;
 }
 
 student[indeks="180748"] {
+  color: #1A7722;
   display: block;
   position: fixed;
   top: 10px;
   left: 20px;
-  margin-left: 900px;
+  margin-left: 950px;
   font-size: 17pt;
-  text-align: center;
   opacity: 0.5;
 }
 
@@ -169,11 +169,25 @@ about_authors surname {
   text-decoration: underline; 
 }
 
+about_authors:before {
+  content: 'Autorzy: ';
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  margin-left: 570px;
+  font-size: 17pt;
+  opacity: 0.5;
+}
+
 about_authors student:before{
   content: attr(indeks);
-
 }
 
 about_authors address,contact{
   display: none;
+}
+
+products bought_product:after{
+  content: attr(product_id);
 }
