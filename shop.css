@@ -30,6 +30,10 @@ order:before{
   content: "Zamówienie numer " attr(id) " ; " attr(status);
 }
 
+order:nth-child(odd){
+  background: #DDAD62;
+}
+
 order[status='confirmed']{
   color: green;
 }
@@ -60,16 +64,11 @@ order products product{
   border-top: 1px solid black;
 }
 
-name surname {
- display: block;
- position: fixed;
-}
-
-name {
+order name {
   font-size: 20px;
 }
 
-surname {
+order surname {
   font-size: 20px;
 }
 order name:before {
@@ -89,19 +88,10 @@ address:before {
   font-size: 18px;
 }
 
-city post_code{
- display: block;
-} 
-
 phone:before {
   content: "Numer telefonu: "; 
   font-style: italic; 
   font-size: 18px;
-}
-
-phone{
-  display: block;
-  font-size: 20px;
 }
 
 created_at:before {
@@ -110,7 +100,7 @@ created_at:before {
   font-size: 18px;
 }
 
-created_at{
+created_at, email, phone, city post_code, order name surname{
   display: block;
   font-size: 20px;
   }
@@ -119,11 +109,6 @@ email:before{
   content: "E-mail: ";
   font-style: italic;
   font-size: 18px;
-}
-
-email{
-  display: block;
-  font-size: 20px;
 }
 
 total:before{
