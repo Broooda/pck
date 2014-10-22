@@ -1,40 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
-<!DOCTYPE shop SYSTEM "dtd_shop.dtd">
-<!-- <!ENTITY nazwa "Najlepszy sklep">
-]> -->
-<!--<!ELEMENT shop (product_list, order*)>
-<!ATTLIST shop
-  name CDATA #REQUIRED
->
-<!ELEMENT order (personal_data,created_at,total,products)>
-<!ATTLIST order id ID #REQUIRED>
-<!ATTLIST order status (confirmed | unconfirmed) "unconfirmed">
-<!ELEMENT personal_data (name,surname,address,contact)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT surname (#PCDATA)>
-<!ELEMENT address (street,city,post_code)>
-<!ELEMENT street (#PCDATA)>
-<!ELEMENT city (#PCDATA)>
-<!ELEMENT post_code (#PCDATA)>
-<!ELEMENT contact (phone, email)>
-<!ELEMENT phone (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT created_at (#PCDATA)>
-<!ELEMENT total (#PCDATA)>
-<!ATTLIST total currency CDATA #REQUIRED>
-<!ELEMENT products EMPTY>
-<!ATTLIST products  product_id IDREF #REQUIRED>
-<!ELEMENT product_list (product+)>
-<!ATTLIST product id ID #REQUIRED>
-<!ELEMENT product (product_name,product_category,price,size,color)>
-<!ELEMENT product_name (#PCDATA)>
-<!ELEMENT product_category (#PCDATA)>
-<!ELEMENT price (#PCDATA)>
-<!ELEMENT size (#PCDATA)>
-<!ELEMENT color (#PCDATA)>
-]> -->
-<shop name='Najlepszy sklep'>
+<!DOCTYPE shop SYSTEM "dtd_shop.dtd" [
+<!ENTITY nazwa "Najlepszy sklep">
+]>
+<shop name='&nazwa;'>
   <o_autorach>
     <student id='stud1' indeks='180508' plec="M">
       <name>Maciej</name>
@@ -218,8 +187,10 @@
     </personal_data>
     <created_at>2014-09-28 14:25:14</created_at>
     <total currency='zł'>1</total>
-    <products product_id='t1'/>
-    <products product_id='t2'/>
+    <products>
+      <product product_id='t1'/>
+      <product product_id='t2'/>
+    </products>
   </order>
   <order id='o3' status='confirmed'>
     <personal_data>

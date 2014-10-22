@@ -23,8 +23,9 @@
 <!ELEMENT created_at (#PCDATA)>
 <!ELEMENT total (#PCDATA)>
 <!ATTLIST total currency CDATA #REQUIRED>
-<!ELEMENT products EMPTY>
-<!ATTLIST products  product_id IDREF #REQUIRED>
+<!ELEMENT products (product+)>
+<!ELEMENT product EMPTY>
+<!ATTLIST product  product_id IDREF #REQUIRED>
 <!ELEMENT product_list (product+)>
 <!ATTLIST product id ID #REQUIRED>
 <!ELEMENT product (product_name,product_category,price,size,color)>
