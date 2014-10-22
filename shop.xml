@@ -45,7 +45,9 @@
         <post_code>12-111</post_code>
       </address>
       <contact>
-        <phone>666666666</phone>  
+        <phone>666666666</phone>
+        <phone>466666666</phone>  
+        <phone>566666666</phone>  
       </contact>
     </student>
     <student id='stud2' indeks='180748' plec="M">
@@ -57,7 +59,9 @@
         <post_code>99-999</post_code>
       </address>
       <contact>
-        <email>180748@edu.p.lodz.pl</email>    
+        <phone>766666666</phone>
+        <email>180748@edu.p.lodz.pl</email> 
+        <email>amozetaki@niepodam.pl</email>    
       </contact>
     </student>
   </o_autorach>

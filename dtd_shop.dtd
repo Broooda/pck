@@ -17,7 +17,7 @@
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT city (#PCDATA)>
 <!ELEMENT post_code (#PCDATA)>
-<!ELEMENT contact ((phone,email?)|(phone?,email))>
+<!ELEMENT contact (phone,(phone*,email*))>
 <!ELEMENT phone (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT created_at (#PCDATA)>
