@@ -1,12 +1,11 @@
-<!ELEMENT shop (o_autorach?,product_list, order*)>
+<!ELEMENT shop (about_authors?,product_list, order*)>
 <!ATTLIST shop name CDATA #REQUIRED>
 
-<!ELEMENT o_autorach (student+)>
+<!ELEMENT about_authors (student+)>
 <!ELEMENT student (name,surname,address,contact)>
 <!ATTLIST student id ID #REQUIRED> 
 <!ATTLIST student indeks CDATA #REQUIRED>
 <!ATTLIST student plec CDATA #REQUIRED>
-
 <!ELEMENT order (personal_data,created_at,total,products)>
 <!ATTLIST order id ID #REQUIRED>
 <!ELEMENT personal_data (name,surname,address,contact)>
@@ -31,5 +30,6 @@
 <!ELEMENT product_name (#PCDATA)>
 <!ELEMENT product_category (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency CDATA #REQUIRED>
 <!ELEMENT size (#PCDATA)>
 <!ELEMENT color (#PCDATA)>
