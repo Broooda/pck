@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3.able.pl"
+xmlns="http://www.w3.able.pl"
+elementFormDefault="qualified">
+
+	<xs:element name='shop'>
+		<xs:complexType>
+		<xs:attribute name='name' type='xs:string'/>
+			<xs:sequence>
+				<xs:element ref='about_authors' minOccurs='0'/>
+				<xs:element ref='product_list'/>
+				<xs:element ref='order' minOccurs='0' maxOccurs='unbounded/'>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='about_authors'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref='student' maxOccurs='unbounded/'>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='student'>
+		<xs:complexType>
+			<xs:attribute name='id' type='xs:ID' use='required'/>
+			<xs:attribute name='indeks' type='indeksType' use='required'/>
+			<xs:attribute name='plec' type='plecType' use='required'/>
+			<xs:sequence>
+				<xs:element name='name' type='xs:string'/>
+				<xs:element name='surname' type='xs:string'/>
+				<xs:element ref='address'/>
+				<xs:element ref='contact'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='order'>
+		<xs:complexType>
+			<xs:attribute name='id' type='xs:ID' use='required'/>
+			<xs:sequence>
+				<xs:element ref='personal_data'/>
+				<xs:element name='created_at' type='xs:dataTime'/>
+				<xs:element name='total' type='cenaType'/>
+				<xs:element name='products' type='productsType'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='personal_data'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='name' type='xs:string'/>
+				<xs:element name='surname' type='xs:string'/>
+				<xs:element name='address' type='addressType'/>
+				<xs:element name='contact' type='contactType'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='address'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='street' type='xs:string'/>
+				<xs:element name='city' type='xs:string'/>
+				<xs:element name='post_code' type='post_codeType'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='contact'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='phone' type='phoneType'/>
+				<xs:choice>
+					<xs:element name='phone' type='phoneType' minOccurs='0' maxOccurs='unbounded'/>
+					<xs:element name='email' type='emailType' minOccurs='0' maxOccurs='unbounded'/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='products'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref='bought_product' maxOccurs='unbounded'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name='bought_product'>
+		<xs:attribute name='product_id' type='xs:IDREF' use='required'/>
+	</xs:complexType>
+
+	<xs:element name='product_list'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref='product' maxOccurs='unbounded'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name='product'>
+		<xs:complexType>
+		<xs:attribute name='id' type='xs:ID' use='required'/>
+			<xs:sequence>
+				<xs:element name='product_name' type='xs:string'/>
+				<xs:element name='product_category' type='categoryType'/>
+				<xs:element name='price' type='cenaType'/>
+				<xs:element name='size' type='sizeType'/>
+				<xs:element name='color' type='xs:string'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+
+
+	<xs:simpleType name='currencyType'>
+		<xs:restriction base='xs:string'>
+			<xs:maxLength value='3'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name='categoryType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='sukienka'/>
+			<xs:enumeration value='buty'/>
+			<xs:enumeration value='dodatki'/>
+			<xs:enumeration value='kapelusz'/>
+			<xs:enumeration value='tshirt'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='indeksType'>
+		<xs:restriction base='xs:integer'>
+			<xs:pattern value='1[1-9]{5}'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='plecType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='M'/>
+			<xs:enumeration value='K'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='post_codeType'>
+		<xs:restriction base='xs:string'>
+			<xs:pattern value='[0-9]{2}-[0-9]{3}'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='emailType'>
+		<xs:restriction base='xs:string'>
+			<xs:pattern value='[^@]+@[^\.]+\..+'/> --TO JEST CIEKAWE !!
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='phoneType'>
+		<xs:restriction base='xs:integer'>
+			<xs:length value='9'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='sizeTyp'>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base='xs:integer'>
+					<xs:minInclusive value='32'/>
+					<xs:maxInclusive value='60'/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base='xs:token'>
+					<xs:enumeration value='S'/>
+					<xs:enumeration value='M'/>
+					<xs:enumeration value='L'/>
+					<xs:enumeration value='XL'/>
+					<xs:enumeration value='XXL'/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</simpleType>
+
+
+	<xs:complexType name='cenaType'>
+		<xs:attribute name='currency' type='currencyType' use='required'/>
+		<xs:simpleType base='float'>
+			<xs:minExlusive value='0'/>
+		</xs:simpleType>
+	</xs:complexType>
+
+</xs:schema>

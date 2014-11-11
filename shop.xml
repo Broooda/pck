@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
-<!DOCTYPE shop SYSTEM "dtd_shop.dtd" [
+<note xmlns="http://www.w3schools.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.w3schools.com dtd_scheme.xsd">
+<!-- <!DOCTYPE shop SYSTEM "dtd_shop.dtd" [
 <!ENTITY nazwa "Najlepszy sklep">
 <!ATTLIST order status (confirmed | unconfirmed) "unconfirmed">
-]>
-<shop name='&nazwa;'>
+]> -->
+<shop name="Najlepszy sklep">
   <about_authors>
     <student id='stud1' indeks='180508' plec="M">
       <name>Maciej</name>
