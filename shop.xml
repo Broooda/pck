@@ -169,7 +169,7 @@
         <email>sda@wp.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-09-26 08:51:04</created_at>
+    <created_at>2014-09-26T08:51:04</created_at>
     <total currency='zł'>72.46</total>
     <products>
       <bought_product product_id='s1'/>
@@ -191,7 +191,7 @@
         <email>adamiaczek11@interia.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-09-28 14:25:14</created_at>
+    <created_at>2014-09-28T14:25:14</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='t1'/>
@@ -212,7 +212,7 @@
         <email>amadfra@gmail.com</email>
       </contact>
     </personal_data>
-    <created_at>2014-09-30 16:45:22</created_at>
+    <created_at>2014-09-30T16:45:22</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s1'/>
@@ -230,10 +230,10 @@
       </address>
       <contact>
         <phone>874521958</phone>
-        <email>koziaserekinteria.pl</email>
+        <email>koziaserek@interia.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-01 09:11:44</created_at>
+    <created_at>2014-10-01T09:11:44</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s2'/>
@@ -254,7 +254,7 @@
         <email>tiruriru@o2.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-01 14:27:54</created_at>
+    <created_at>2014-10-01T14:27:54</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s1'/>
@@ -274,7 +274,7 @@
         <email>gutekpszczolka@gmail.com</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-01 14:44:51</created_at>
+    <created_at>2014-10-01T14:44:51</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s1'/>
@@ -296,7 +296,7 @@
         <email>prosiaczek1223@wp.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-25 10:51:54</created_at>
+    <created_at>2014-10-25T10:51:54</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='b1'/>
@@ -319,7 +319,7 @@
         <email>chrzaszczyrzewoszyce@wp.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-04 07:12:19</created_at>
+    <created_at>2014-10-04T07:12:19</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='b2'/>
@@ -332,14 +332,14 @@
       <address>
         <street>Techniczna 66</street>
         <city>Konin</city>
-        <post_code>541-748</post_code>
+        <post_code>54-748</post_code>
       </address>
       <contact>
         <phone>654852951</phone>
         <email>wpoldobulki@o2.eu</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-04 08:24:41</created_at>
+    <created_at>2014-10-04T08:24:41</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='k1'/>
@@ -359,7 +359,7 @@
         <email>jalowaziemia@wp.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-04 14:27:40</created_at>
+    <created_at>2014-10-04T14:27:40</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='k2'/>
@@ -379,7 +379,7 @@
         <email>toja111222@interia.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-04 14:38:54</created_at>
+    <created_at>2014-10-04T14:38:54</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='b1'/>
@@ -401,7 +401,7 @@
         <email>totendziadija@wp.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-05 07:42:11</created_at>
+    <created_at>2014-10-05T07:42:11</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s1'/>
@@ -422,7 +422,7 @@
         <email>atararata@onet.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-10-05 10:10:11</created_at>
+    <created_at>2014-10-05T10:10:11</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='k1'/>
@@ -443,7 +443,7 @@
         <email>gustaw.konrad@wp.pl</email>
       </contact>
     </personal_data>
-    <created_at>2013-12-23 14:07:14</created_at>
+    <created_at>2013-12-23T14:07:14</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s3'/>
@@ -463,7 +463,7 @@
         <email>a.mickiewicz@gmail.com</email>
       </contact>
     </personal_data>
-    <created_at>2013-11-16 16:57:14</created_at>
+    <created_at>2013-11-16T16:57:14</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s1'/>
@@ -483,7 +483,7 @@
         <email>wisia@onet.eu</email>
       </contact>
     </personal_data>
-    <created_at>2013-09-01 23:59:59</created_at>
+    <created_at>2013-09-01T23:59:59</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='s4'/>
@@ -504,7 +504,7 @@
         <email>parafianieznami@onet.eu</email>
       </contact>
     </personal_data>
-    <created_at>2013-04-21 15:29:49</created_at>
+    <created_at>2013-04-21T15:29:49</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='t3'/>
@@ -524,7 +524,7 @@
         <email>elemeledudki@o2.pl</email>
       </contact>
     </personal_data>
-    <created_at>2013-10-12 04:42:23</created_at>
+    <created_at>2013-10-12T04:42:23</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='k1'/>
@@ -545,7 +545,7 @@
         <email>badatrw@renka.pl</email>
       </contact>
     </personal_data>
-    <created_at>2013-12-12 21:55:12</created_at>
+    <created_at>2013-12-12T21:55:12</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='k1'/>
@@ -565,7 +565,7 @@
         <email>anna.wiadro@wp.pl</email>
       </contact>
     </personal_data>
-    <created_at>2014-02-15 11:20:11</created_at>
+    <created_at>2014-02-15T11:20:11</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='t2'/>
@@ -585,7 +585,7 @@
         <email>t.szulczewska@gmail.com</email>
       </contact>
     </personal_data>
-    <created_at>2014-02-13 14:44:44</created_at>
+    <created_at>2014-02-13T14:44:44</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='t3'/>
@@ -605,7 +605,7 @@
         <email>zielonomi@shrek.com</email>
       </contact>
     </personal_data>
-    <created_at>2013-04-12 08:14:28</created_at>
+    <created_at>2013-04-12T08:14:28</created_at>
     <total currency='zł'>1</total>
     <products>
       <bought_product product_id='k1'/>

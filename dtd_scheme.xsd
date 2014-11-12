@@ -10,7 +10,7 @@ elementFormDefault="qualified">
 			<xs:sequence>
 				<xs:element ref='about_authors' minOccurs='0'/>
 				<xs:element ref='product_list'/>
-				<xs:element ref='order' minOccurs='0' maxOccurs='unbounded/'>
+				<xs:element ref='order' minOccurs='0' maxOccurs='unbounded'/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -18,7 +18,7 @@ elementFormDefault="qualified">
 	<xs:element name='about_authors'>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref='student' maxOccurs='unbounded/'>
+				<xs:element ref='student' maxOccurs='unbounded'/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -137,7 +137,7 @@ elementFormDefault="qualified">
 
 	<xs:simpleType name='indeksType'>
 		<xs:restriction base='xs:integer'>
-			<xs:pattern value='1[1-9]{5}'/>
+			<xs:pattern value='1[0-9]{5}'/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -181,10 +181,11 @@ elementFormDefault="qualified">
 					<xs:enumeration value='L'/>
 					<xs:enumeration value='XL'/>
 					<xs:enumeration value='XXL'/>
+					<xs:enumeration value='uniwersalny'/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:union>
-	</simpleType>
+	</xs:simpleType>
 
 
 	<xs:complexType name='cenaType'>
