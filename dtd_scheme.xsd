@@ -1,51 +1,64 @@
-<?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-targetNamespace="http://www.w3.able.pl"
-xmlns="http://www.w3.able.pl"
-elementFormDefault="qualified">
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 	<xs:element name='shop'>
 		<xs:complexType>
-		<xs:attribute name='name' type='xs:string'/>
 			<xs:sequence>
 				<xs:element ref='about_authors' minOccurs='0'/>
 				<xs:element ref='product_list'/>
-				<xs:element ref='order' minOccurs='0' maxOccurs='unbounded/'>
+				<xs:element ref='order' minOccurs='0' maxOccurs='unbounded'/>
 			</xs:sequence>
+			<xs:attribute name='name' type='xs:string'/>
 		</xs:complexType>
+		
+		<xs:key name='orderIdUnique'>
+			<xs:selector xpath='order'/>
+			<xs:field xpath='@id'/>
+		</xs:key>
+	
+		<xs:key name='productIdUnique'>
+			<xs:selector xpath='product_list/product'/>
+			<xs:field xpath='@id'/>
+		</xs:key>
+	
+		<xs:unique name='orderId'>
+			<xs:selector xpath='shop/order'/>
+			<xs:field xpath='@id'/>
+			<xs:field xpath='surname'/>
+		</xs:unique>
 	</xs:element>
 
 	<xs:element name='about_authors'>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref='student' maxOccurs='unbounded/'>
+				<xs:element ref='student' maxOccurs='unbounded'/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 
 	<xs:element name='student'>
 		<xs:complexType>
-			<xs:attribute name='id' type='xs:ID' use='required'/>
-			<xs:attribute name='indeks' type='indeksType' use='required'/>
-			<xs:attribute name='plec' type='plecType' use='required'/>
 			<xs:sequence>
 				<xs:element name='name' type='xs:string'/>
 				<xs:element name='surname' type='xs:string'/>
 				<xs:element ref='address'/>
 				<xs:element ref='contact'/>
 			</xs:sequence>
+			<xs:attribute name='id' type='xs:ID' use='required'/>
+			<xs:attribute name='indeks' type='indeksType' use='required'/>
+			<xs:attribute name='plec' type='plecType' use='required'/>
 		</xs:complexType>
 	</xs:element>
 
 	<xs:element name='order'>
 		<xs:complexType>
-			<xs:attribute name='id' type='xs:ID' use='required'/>
 			<xs:sequence>
 				<xs:element ref='personal_data'/>
-				<xs:element name='created_at' type='xs:dataTime'/>
+				<xs:element name='created_at' type='xs:dateTime'/>
 				<xs:element name='total' type='cenaType'/>
-				<xs:element name='products' type='productsType'/>
+				<xs:element ref='products'/>
 			</xs:sequence>
+			<xs:attribute name='id' type='xs:ID' use='required'/>
 		</xs:complexType>
 	</xs:element>
 
@@ -54,8 +67,8 @@ elementFormDefault="qualified">
 			<xs:sequence>
 				<xs:element name='name' type='xs:string'/>
 				<xs:element name='surname' type='xs:string'/>
-				<xs:element name='address' type='addressType'/>
-				<xs:element name='contact' type='contactType'/>
+				<xs:element ref='address'/>
+				<xs:element ref='contact'/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -81,7 +94,13 @@ elementFormDefault="qualified">
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-
+	
+	<xs:element name='bought_product'>
+		<xs:complexType>
+			<xs:attribute name='product_id' type='xs:IDREF' use='required'/>
+		</xs:complexType>
+	</xs:element>
+	
 	<xs:element name='products'>
 		<xs:complexType>
 			<xs:sequence>
@@ -89,10 +108,6 @@ elementFormDefault="qualified">
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-
-	<xs:complexType name='bought_product'>
-		<xs:attribute name='product_id' type='xs:IDREF' use='required'/>
-	</xs:complexType>
 
 	<xs:element name='product_list'>
 		<xs:complexType>
@@ -104,7 +119,6 @@ elementFormDefault="qualified">
 
 	<xs:element name='product'>
 		<xs:complexType>
-		<xs:attribute name='id' type='xs:ID' use='required'/>
 			<xs:sequence>
 				<xs:element name='product_name' type='xs:string'/>
 				<xs:element name='product_category' type='categoryType'/>
@@ -112,11 +126,9 @@ elementFormDefault="qualified">
 				<xs:element name='size' type='sizeType'/>
 				<xs:element name='color' type='xs:string'/>
 			</xs:sequence>
+			<xs:attribute name='id' type='xs:ID' use='required'/>
 		</xs:complexType>
 	</xs:element>
-
-
-
 
 	<xs:simpleType name='currencyType'>
 		<xs:restriction base='xs:string'>
@@ -156,17 +168,17 @@ elementFormDefault="qualified">
 
 	<xs:simpleType name='emailType'>
 		<xs:restriction base='xs:string'>
-			<xs:pattern value='[^@]+@[^\.]+\..+'/> --TO JEST CIEKAWE !!
+			<xs:pattern value='[^@]+@[^\.]+\..+'/>
 		</xs:restriction>
 	</xs:simpleType>
 
 	<xs:simpleType name='phoneType'>
-		<xs:restriction base='xs:integer'>
-			<xs:length value='9'/>
+		<xs:restriction base='xs:decimal'>
+			<xs:totalDigits value='9'/>
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name='sizeTyp'>
+	<xs:simpleType name='sizeType'>
 		<xs:union>
 			<xs:simpleType>
 				<xs:restriction base='xs:integer'>
@@ -184,14 +196,15 @@ elementFormDefault="qualified">
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:union>
-	</simpleType>
+	</xs:simpleType>
 
 
 	<xs:complexType name='cenaType'>
-		<xs:attribute name='currency' type='currencyType' use='required'/>
-		<xs:simpleType base='float'>
-			<xs:minExlusive value='0'/>
-		</xs:simpleType>
-	</xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:float">
+                    <xs:attribute name='currency' type='currencyType' use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
 
 </xs:schema>
