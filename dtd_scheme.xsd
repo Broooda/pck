@@ -59,8 +59,16 @@
 				<xs:element ref='products'/>
 			</xs:sequence>
 			<xs:attribute name='id' type='xs:ID' use='required'/>
+			<xs:attribute name='status' type='statusType' use='optional' default='unconfirmed'/>
 		</xs:complexType>
 	</xs:element>
+
+	<xs:simpleType name='statusType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='confirmed'/>
+			<xs:enumeration value='unconfirmed'/>
+		</xs:restriction>
+	</xs:simpleType>
 
 	<xs:element name='personal_data'>
 		<xs:complexType>
