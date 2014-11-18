@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ours='http://ours.pl'>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	
 	<xs:attributeGroup name='moreInformation'>
-		<xs:attribute name='sex' type='ours:sexType' use='optional'/>
-		<xs:attribute name='age' type='ours:ageType' use='optional'/>
+		<xs:attribute name='sex' type='sexType' use='optional'/>
+		<xs:attribute name='age' type='ageType' use='optional'/>
 	</xs:attributeGroup>
 
 	<xs:element name='shop'>
@@ -56,7 +56,7 @@
 				<xs:element ref='contact'/>
 			</xs:sequence>
 			<xs:attribute name='id' type='xs:ID' use='required'/>
-			<xs:attribute name='indeks' type='ours:indeksType' use='required'/>
+			<xs:attribute name='indeks' type='indeksType' use='required'/>
 			<xs:attributeGroup ref='moreInformation'/>
 		</xs:complexType>
 	</xs:element>
@@ -66,11 +66,11 @@
 			<xs:sequence>
 				<xs:element ref='personal_data'/>
 				<xs:element name='created_at' type='xs:dateTime'/>
-				<xs:element name='total' type='ours:priceType'/>
+				<xs:element name='total' type='cenaType'/>
 				<xs:element ref='products'/>
 			</xs:sequence>
 			<xs:attribute name='id' type='xs:ID' use='required'/>
-			<xs:attribute name='status' type='ours:statusType' use='optional' default='unconfirmed'/>
+			<xs:attribute name='status' type='statusType' use='optional' default='unconfirmed'/>
 		</xs:complexType>
 	</xs:element>
 
@@ -98,7 +98,7 @@
 			<xs:sequence>
 				<xs:element name='street' type='xs:string'/>
 				<xs:element name='city' type='xs:string'/>
-				<xs:element name='post_code' type='ours:post_codeType'/>
+				<xs:element name='post_code' type='post_codeType'/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -106,10 +106,10 @@
 	<xs:element name='contact'>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name='phone' type='ours:phoneType'/>
+				<xs:element name='phone' type='phoneType'/>
 				<xs:choice>
-					<xs:element name='phone' type='ours:phoneType' minOccurs='0' maxOccurs='unbounded'/>
-					<xs:element name='email' type='ours:emailType' minOccurs='0' maxOccurs='unbounded'/>
+					<xs:element name='phone' type='phoneType' minOccurs='0' maxOccurs='unbounded'/>
+					<xs:element name='email' type='emailType' minOccurs='0' maxOccurs='unbounded'/>
 				</xs:choice>
 			</xs:sequence>
 		</xs:complexType>
@@ -141,9 +141,9 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name='product_name' type='xs:string'/>
-				<xs:element name='product_category' type='ours:categoryType'/>
-				<xs:element name='price' type='ours:priceType'/>
-				<xs:element name='size' type='ours:sizeType'/>
+				<xs:element name='product_category' type='categoryType'/>
+				<xs:element name='price' type='cenaType'/>
+				<xs:element name='size' type='sizeType'/>
 				<xs:element name='color' type='xs:string'/>
 			</xs:sequence>
 			<xs:attribute name='id' type='xs:ID' use='required'/>
@@ -226,10 +226,10 @@
 	</xs:simpleType>
 
 
-	<xs:complexType name='priceType'>
+	<xs:complexType name='cenaType'>
             <xs:simpleContent>
                 <xs:extension base="xs:float">
-                    <xs:attribute name='currency' type='ours:currencyType' use="required"/>
+                    <xs:attribute name='currency' type='currencyType' use="required"/>
                 </xs:extension>
             </xs:simpleContent>
         </xs:complexType>

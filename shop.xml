@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href='shop.css' type='text/css'?>
 
-<shop name="Najlepszy sklep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ours.pl dtd_scheme.xsd">
+<shop name="Najlepszy sklep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dtd_scheme.xsd">
   <about_authors>
     <student id='stud1' indeks='180508' sex='M' age='21'>
       <name>Maciej</name>
