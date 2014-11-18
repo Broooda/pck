@@ -3,7 +3,7 @@
 
 <shop name="Najlepszy sklep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dtd_scheme.xsd">
   <about_authors>
-    <student id='stud1' indeks='180508' plec="M">
+    <student id='stud1' indeks='180508' sex='M' age='21'>
       <name>Maciej</name>
       <surname>Brodecki</surname>
       <address>
@@ -17,7 +17,7 @@
         <phone>566666666</phone>  
       </contact>
     </student>
-    <student id='stud2' indeks='180748' plec="M">
+    <student id='stud2' indeks='180748' sex='M' age='21'>
       <name>Artur</name>
       <surname>Wróblewski</surname>
       <address>
@@ -150,7 +150,7 @@
   <!-- Orders -->
 
   <order id='o1'>
-    <personal_data>
+    <personal_data sex='M' age='42'>
       <name>Maciej</name>
       <surname>Brodecki</surname>
       <address>
@@ -172,7 +172,7 @@
     </products>
   </order>
   <order id='o2'>
-    <personal_data>
+    <personal_data sex='F' age='32'>
       <name>Adam</name>
       <surname>Świątek</surname>
       <address>
@@ -193,7 +193,7 @@
     </products>
   </order>
   <order id='o3' status='confirmed'>
-    <personal_data>
+    <personal_data sex='F' age='32'>
       <name>Magda</name>
       <surname>Datek</surname>
       <address>
@@ -214,7 +214,7 @@
     </products>
   </order>
   <order id='o4' status='confirmed'>
-    <personal_data>
+    <personal_data sex='M' age='33'>
       <name>Elżbieta</name>
       <surname>Toporek</surname>
       <address>
@@ -235,7 +235,7 @@
     </products>
   </order>
   <order id='o5' status='confirmed'>
-    <personal_data>
+    <personal_data sex='F' age='32'>
       <name>Marcin</name>
       <surname>Majdan</surname>
       <address>
@@ -255,7 +255,7 @@
     </products>
   </order>
   <order id='o6' status='confirmed'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Beata</name>
       <surname>Tyczka</surname>
       <address>
@@ -277,7 +277,7 @@
     </products>
   </order>
   <order id='o7'>
-    <personal_data>
+    <personal_data sex='M' age='42'>
       <name>Mateusz</name>
       <surname>Spokojny</surname>
       <address>
@@ -300,7 +300,7 @@
     </products>
   </order>
   <order id='o8'>
-    <personal_data>
+    <personal_data sex='F' age='35'>
       <name>Alan</name>
       <surname>Płatek</surname>
       <address>
@@ -320,7 +320,7 @@
     </products>
   </order>
   <order id='o9'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Bożydar</name>
       <surname>Aleksis</surname>
       <address>
@@ -340,7 +340,7 @@
     </products>
   </order>
   <order id='o10' status='confirmed'>
-    <personal_data>
+    <personal_data sex='M' age='21'>
       <name>Agata</name>
       <surname>Bidon</surname>
       <address>
@@ -360,7 +360,7 @@
     </products>
   </order>
   <order id='o11' status='confirmed'>
-    <personal_data>
+    <personal_data sex='F' age='32'>
       <name>Edyta</name>
       <surname>Górska</surname>
       <address>
@@ -382,7 +382,7 @@
     </products>
   </order>
   <order id='o12'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Amelia</name>
       <surname>Wieloryb</surname>
       <address>
@@ -403,7 +403,7 @@
     </products>
   </order>
   <order id='o13' status='confirmed'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Marcin</name>
       <surname>Pokuta</surname>
       <address>
@@ -424,7 +424,7 @@
     </products>
   </order>
   <order id='o14'>
-    <personal_data>
+    <personal_data sex='F' age='63'>
       <name>Gustaw</name>
       <surname>Konrad</surname>
       <address>
@@ -444,7 +444,7 @@
     </products>
   </order>
   <order id='o15' status='confirmed'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Adam</name>
       <surname>Mickiewicz</surname>
       <address>
@@ -464,7 +464,7 @@
     </products>
   </order>
   <order id='o16' status='confirmed'>
-    <personal_data>
+    <personal_data sex='F' age='47'>
       <name>Wisława</name>
       <surname>Szymborska</surname>
       <address>
@@ -485,7 +485,7 @@
     </products>
   </order>
   <order id='o17'>
-    <personal_data>
+    <personal_data sex='F' age='25'>
       <name>Jakub</name>
       <surname>Rząd</surname>
       <address>
@@ -505,7 +505,7 @@
     </products>
   </order>
   <order id='o18' status='confirmed'>
-    <personal_data>
+    <personal_data sex='F' age='35'>
       <name>Artur</name>
       <surname>Więc</surname>
       <address>
@@ -526,7 +526,7 @@
     </products>
   </order>
   <order id='o19' status='confirmed'>
-    <personal_data>
+    <personal_data sex='F' age='42'>
       <name>Marta</name>
       <surname>Manta</surname>
       <address>
@@ -546,7 +546,7 @@
     </products>
   </order>
   <order id='o20'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Anna</name>
       <surname>Wiadro</surname>
       <address>
@@ -566,7 +566,7 @@
     </products>
   </order>
   <order id='o21'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Terencja</name>
       <surname>Szulczewska</surname>
       <address>
@@ -586,7 +586,7 @@
     </products>
   </order>
   <order id='o22' status='confirmed'>
-    <personal_data>
+    <personal_data sex='M' age='32'>
       <name>Shrek</name>
       <surname>Osioł</surname>
       <address>
