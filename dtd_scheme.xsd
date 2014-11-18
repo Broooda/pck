@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:attributeGroup name='moreInformation'>
+		<xs:attribute name='sex' type='sexType' use='optional'/>
+		<xs:attribute name='age' type='ageType' use='optional'/>
+	</xs:attributeGroup>
 
 	<xs:element name='shop'>
 		<xs:complexType>
@@ -52,7 +57,7 @@
 			</xs:sequence>
 			<xs:attribute name='id' type='xs:ID' use='required'/>
 			<xs:attribute name='indeks' type='indeksType' use='required'/>
-			<xs:attribute name='plec' type='plecType' use='required'/>
+			<xs:attributeGroup ref='moreInformation'/>
 		</xs:complexType>
 	</xs:element>
 
@@ -84,6 +89,7 @@
 				<xs:element ref='address'/>
 				<xs:element ref='contact'/>
 			</xs:sequence>
+			<xs:attributeGroup ref='moreInformation'/>
 		</xs:complexType>
 	</xs:element>
 
@@ -167,10 +173,16 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name='plecType'>
+	<xs:simpleType name='ageType'>
+		<xs:restriction base='xs:integet'/>
+			<xs:minInclusive value='18'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='sexType'>
 		<xs:restriction base='xs:string'>
 			<xs:enumeration value='M'/>
-			<xs:enumeration value='K'/>
+			<xs:enumeration value='F'/>
 		</xs:restriction>
 	</xs:simpleType>
 
