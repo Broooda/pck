@@ -20,6 +20,12 @@
 			<xs:selector xpath='product_list/product'/>
 			<xs:field xpath='@id'/>
 		</xs:key>
+		
+		<xs:keyref name="productsRef" refer="productIdUnique">
+            		<xs:selector xpath="bought_product "/>
+            		<xs:field xpath="@product_id" />            
+		</xs:keyref>
+	
 	
 		<xs:unique name='orderId'>
 			<xs:selector xpath='shop/order'/>
