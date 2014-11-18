@@ -174,7 +174,7 @@
 	</xs:simpleType>
 
 	<xs:simpleType name='ageType'>
-		<xs:restriction base='xs:integet'/>
+		<xs:restriction base='xs:integer'>
 			<xs:minInclusive value='18'/>
 		</xs:restriction>
 	</xs:simpleType>
